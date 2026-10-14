@@ -1,6 +1,7 @@
 import { createHash, randomBytes } from 'node:crypto';
 import argon2 from 'argon2';
 import pg from 'pg';
+import { sendPasswordLink } from './mail.js';
 
 let pool;
 function db() {
@@ -57,6 +58,40 @@ export async function authRoute(req,res,path) {
     if(u.access_status!=='active') return json(res,403,{error:'Acesso ainda não liberado'});
     await createSession(res,u.id);
     return json(res,200,{user:publicUser(u)});
+  }
+  if(path==='/api/auth/forgot-password' && req.method==='POST') {
+    const b=await input(req);
+    const email=String(b.email||'').trim().toLowerCase();
+    if(email.length>254) return json(res,202,{message:'Se a conta estiver habilitada, enviaremos instruções por e-mail.'});
+    const {rows}=await db().query('SELECT id,full_name,email FROM users WHERE lower(email)=$1 AND access_status=\'active\' AND password_hash IS NOT NULL',[email]);
+    const user=rows[0];
+    if(user) {
+      const token=randomBytes(32).toString('hex');
+      const hash=digest(token);
+      await db().query(`INSERT INTO password_reset_tokens(user_id,token_hash,expires_at) VALUES($1,$2,now()+interval '30 minutes')`,[user.id,hash]);
+      try {await sendPasswordLink({to:user.email,name:user.full_name,token});}
+      catch(err){ console.error('Falha no envio da recuperação de senha:',err.message); }
+    }
+    return json(res,202,{message:'Se a conta estiver habilitada, enviaremos instruções por e-mail.'});
+  }
+  if(path==='/api/auth/reset-password' && req.method==='POST') {
+    const b=await input(req);
+    const token=String(b.token||'');
+    const password=String(b.password||'');
+    if(!/^[a-f0-9]{64}$/.test(token) || password.length<12 || password.length>128) return json(res,400,{error:'Link inválido ou senha fora dos limites (12 a 128 caracteres).'});
+    const client=await db().connect();
+    try {
+      await client.query('BEGIN');
+      const {rows}=await client.query(`SELECT p.id,p.user_id,u.access_status FROM password_reset_tokens p JOIN users u ON u.id=p.user_id WHERE p.token_hash=$1 AND p.used_at IS NULL AND p.expires_at>now() FOR UPDATE OF p`,[digest(token)]);
+      const row=rows[0];
+      if(!row || row.access_status!=='active') { await client.query('ROLLBACK'); return json(res,400,{error:'Link inválido ou expirado'}); }
+      const hash=await argon2.hash(password,{type:argon2.argon2id});
+      await client.query('UPDATE users SET password_hash=$1,updated_at=now() WHERE id=$2',[hash,row.user_id]);
+      await client.query('UPDATE password_reset_tokens SET used_at=now() WHERE user_id=$1 AND used_at IS NULL',[row.user_id]);
+      await client.query('DELETE FROM sessions WHERE user_id=$1',[row.user_id]);
+      await client.query('COMMIT');
+      return json(res,200,{message:'Senha alterada com sucesso'});
+    }catch(err){await client.query('ROLLBACK');throw err;}finally{client.release();}
   }
   if(path==='/api/auth/me' && req.method==='GET') {
     const u=await authenticated(req);
