@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 import { calculate } from './src/calculate.js';
 import { authRoute, requirePaidUser, saveSimulation, listSimulations } from './src/auth.js';
+import { paymentRoute } from './src/payments.js';
 
 const base=resolve('public');
 const types={'.json':'application/json; charset=utf-8','.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml'};
@@ -17,6 +18,7 @@ const server=http.createServer(async(req,res)=>{
   try{
     const url=new URL(req.url,'http://localhost');
     const path=url.pathname;
+    if(path.startsWith('/api/payments/')) return await paymentRoute(req,res,path,url);
     if(path.startsWith('/api/auth/')) return await authRoute(req,res,path);
     if(path==='/api/calculate' && req.method==='POST'){
       const user=await requirePaidUser(req,res);if(!user)return;
