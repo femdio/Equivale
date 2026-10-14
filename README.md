@@ -74,3 +74,9 @@ Incluídas 2694 ocupações oficiais e 7778 registros de sinônimos fornecidos p
 
 ## Impressão em PDF (v1.0.1)
 A proposta continua editável na tela. Ao usar “Imprimir / PDF”, o site imprime uma cópia expandida do texto, não o campo de edição com barra de rolagem. A folha é A4 em retrato, com quebras automáticas quando necessário e tabela dimensionada para caber na largura da página. No navegador selecione “Salvar como PDF”, papel A4 e orientação Retrato; desative “Cabeçalhos e rodapés” se não quiser data/URL/número de página do navegador. Não imponha a exigência de que conteúdo longo caiba em uma só página.
+
+
+## Histórico de implantação
+
+- Implantação inicial na Oracle Cloud Ubuntu.
+- Atualização automatizada pelo GitHub.
