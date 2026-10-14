@@ -130,3 +130,21 @@
 }
 
 @media print{.proposal-panel table.comparison.detailed th,.proposal-panel table.comparison.detailed td{text-align:left!important}.proposal-panel table.comparison.detailed th:not(:first-child),.proposal-panel table.comparison.detailed td:not(:first-child){text-align:left!important}}
+
+/* Equivale — telas de conta, alinhadas à identidade da calculadora */
+.account-shell{min-height:calc(100vh - 160px);display:flex;align-items:center;justify-content:center}
+.account-panel{width:min(100%,540px);padding:38px;border-radius:22px}
+.account-title{font-size:clamp(29px,4vw,39px);letter-spacing:-1.4px;margin:16px 0 10px;color:#193540}
+.account-lede{font-size:15px;margin:0 0 23px}.account-submit{width:100%;margin-top:22px;min-height:48px}
+.account-price{padding:18px 19px;margin:16px 0;background:#edf7f2;color:#12695c;border:1px solid #d1e6dc;border-radius:14px;font-size:30px;font-weight:800}
+.account-price small{display:block;font-size:12px;font-weight:600;margin-top:4px;color:#54776e}
+.account-switch{font-size:14px;color:#61737b;text-align:center;margin:20px 0 0}.account-switch a{font-weight:750;color:#12695c}
+.account-notice{font-size:13px;border-radius:12px;background:#fff8e9;color:#775b29;padding:13px 15px;margin-top:16px}
+.account-alert{margin-top:15px;background:#fff1eb;color:#974427;border-radius:12px;padding:13px;font-size:14px}
+.account-alert.success{background:#e5f4eb;color:#12695c}.account-panel input:focus{outline:2px solid #16866b;outline-offset:2px}
+.account-summary{display:flex;align-items:center;justify-content:space-between;gap:15px;background:#f2f8f5;border-radius:14px;padding:18px;flex-wrap:wrap}
+.account-user{display:grid;gap:3px}.account-user span{color:#657981;font-size:13px;overflow-wrap:anywhere}
+.account-state{background:#e2f4ea;color:#12695c;border-radius:20px;padding:7px 11px;font-size:12px;font-weight:750}
+.account-actions{display:flex;gap:10px;margin:22px 0}.account-history-title{font-size:21px;margin:26px 0 14px}
+.account-history{color:#6b7e84;font-size:14px}.history-row{border:1px solid #e1ebe6;border-radius:10px;padding:13px;display:flex;justify-content:space-between;gap:10px;margin:8px 0}
+@media(max-width:760px){.account-panel{padding:24px}.account-actions{flex-wrap:wrap}.account-actions button{flex:1}}
