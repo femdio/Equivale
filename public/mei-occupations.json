@@ -1,0 +1,3292 @@
+[
+  {
+    "occupation": "ABATEDOR(A) DE AVES COM COMERCIALIZAÇÃO DO PRODUTO INDEPENDENTE",
+    "cnae": "4724-5/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ACABADOR(A) DE CALÇADOS INDEPENDENTE",
+    "cnae": "1531-9/02",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "AÇOUGUEIRO(A) INDEPENDENTE",
+    "cnae": "4722-9/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ADESTRADOR(A) DE ANIMAIS INDEPENDENTE",
+    "cnae": "9609-2/07",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ADESTRADOR(A) DE CÃES DE GUARDA INDEPENDENTE",
+    "cnae": "8011-1/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "AGENTE DE CORREIO FRANQUEADO E PERMISSIONÁRIO",
+    "cnae": "5310-5/02",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "AGENTE DE VIAGENS INDEPENDENTE",
+    "cnae": "7911-2/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "AGENTE FUNERÁRIO INDEPENDENTE",
+    "cnae": "9603-3/04",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "AGENTE MATRIMONIAL INDEPENDENTE",
+    "cnae": "9609-2/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ALFAIATE INDEPENDENTE",
+    "cnae": "1412-6/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "AMOLADOR(A) DE ARTIGOS DE CUTELARIA INDEPENDENTE",
+    "cnae": "9529-1/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ANIMADOR(A) DE FESTAS INDEPENDENTE",
+    "cnae": "9329-8/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ANTIQUÁRIO(A) INDEPENDENTE",
+    "cnae": "4785-7/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "APICULTOR(A) INDEPENDENTE",
+    "cnae": "0159-8/01",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "APURADOR(A), COLETOR(A) E FORNECEDOR(A) DE RECORTES DE MATÉRIAS PUBLICADAS EM JORNAIS E REVISTAS INDEPENDENTE",
+    "cnae": "6399-2/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARMADOR(A) DE FERRAGENS NA CONSTRUÇÃO CIVIL",
+    "cnae": "2599-3/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) DE BIJUTERIAS INDEPENDENTE",
+    "cnae": "3212-4/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM BORRACHA INDEPENDENTE",
+    "cnae": "2219-6/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM CERÂMICA INDEPENDENTE",
+    "cnae": "2349-4/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM CIMENTO INDEPENDENTE",
+    "cnae": "2330-3/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM CORTIÇA, BAMBU E AFINS INDEPENDENTE",
+    "cnae": "1629-3/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM COURO INDEPENDENTE",
+    "cnae": "1529-7/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM GESSO INDEPENDENTE",
+    "cnae": "2330-3/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM LOUÇAS, VIDRO E CRISTAL INDEPENDENTE",
+    "cnae": "2399-1/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM MADEIRA INDEPENDENTE",
+    "cnae": "1629-3/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM MÁRMORE, GRANITO, ARDÓSIA E OUTRAS",
+    "cnae": "2391-5/03",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM METAIS INDEPENDENTE",
+    "cnae": "2599-3/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM METAIS PRECIOSOS INDEPENDENTE",
+    "cnae": "3211-6/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM OUTROS MATERIAIS INDEPENDENTE",
+    "cnae": "3299-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM PAPEL INDEPENDENTE",
+    "cnae": "1749-4/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM PLÁSTICO INDEPENDENTE",
+    "cnae": "2229-3/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO(Ã) EM VIDRO INDEPENDENTE",
+    "cnae": "2319-2/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ARTESÃO TÊXTIL",
+    "cnae": "1359-6/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ASTRÓLOGO(A) INDEPENDENTE",
+    "cnae": "9609-2/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "AZULEJISTA INDEPENDENTE",
+    "cnae": "4330-4/05",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "BALEIRO(A) INDEPENDENTE",
+    "cnae": "4721-1/04",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "BANHISTA DE ANIMAIS DOMÉSTICOS INDEPENDENTE",
+    "cnae": "9609-2/08",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "BARBEIRO INDEPENDENTE",
+    "cnae": "9602-5/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "BARQUEIRO(A) INDEPENDENTE",
+    "cnae": "5099-8/99",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "BARRAQUEIRO(A) INDEPENDENTE",
+    "cnae": "4712-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "BENEFICIADOR(A) DE CASTANHA INDEPENDENTE",
+    "cnae": "1031-7/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "BIKEBOY (CICLISTA MENSAGEIRO) INDEPENDENTE",
+    "cnae": "5320-2/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "BIKE PROPAGANDISTA INDEPENDENTE",
+    "cnae": "7319-0/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "BOLACHEIRO(A)/BISCOITEIRO(A) INDEPENDENTE",
+    "cnae": "1092-9/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "BOMBEIRO(A) HIDRÁULICO INDEPENDENTE",
+    "cnae": "4322-3/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "BONELEIRO(A) (FABRICANTE DE BONÉS) INDEPENDENTE",
+    "cnae": "1414-2/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "BORDADEIRO(A) INDEPENDENTE",
+    "cnae": "1340-5/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "BORRACHEIRO(A) INDEPENDENTE",
+    "cnae": "4520-0/06",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "BRITADOR INDEPENDENTE",
+    "cnae": "2391-5/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CABELEIREIRO(A) INDEPENDENTE",
+    "cnae": "9602-5/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CALAFETADOR(A) INDEPENDENTE",
+    "cnae": "4330-4/05",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CALHEIRO (A) INDEPENDENTE",
+    "cnae": "4399-1/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CAMINHONEIRO (A) DE CARGAS NÃO PERIGOSAS, INTERMUNICIPAL E INTERESTADUAL INDEPENDENTE",
+    "cnae": "4930-2/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CANTOR(A)/MÚSICO(A) INDEPENDENTE",
+    "cnae": "9001-9/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CAPOTEIRO(A) INDEPENDENTE",
+    "cnae": "4520-0/08",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CARPINTEIRO(A) INDEPENDENTE",
+    "cnae": "1622-6/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CARPINTEIRO(A) INSTALADOR(A) INDEPENDENTE",
+    "cnae": "4330-4/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CARREGADOR (VEÍCULOS INDEPENDENTE",
+    "cnae": "5212-5/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CARREGADOR DE MALAS INDEPENDENTE",
+    "cnae": "9609-2/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CARROCEIRO - COLETA DE ENTULHOS E RESÍDUOS",
+    "cnae": "3811-4/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CARROCEIRO - TRANSPORTE DE CARGA INDEPENDENTE",
+    "cnae": "4930-2/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CARROCEIRO - TRANSPORTE DE MUDANÇA INDEPENDENTE",
+    "cnae": "4930-2/04",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CARTAZISTA, PINTOR DE INDEPENDENTE",
+    "cnae": "8299-7/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CERQUEIRO(A) INDEPENDENTE",
+    "cnae": "4399-1/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CHAPELEIRO(A) INDEPENDENTE",
+    "cnae": "1414-2/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CHAVEIRO(A) INDEPENDENTE",
+    "cnae": "9529-1/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CHOCOLATEIRO(A) INDEPENDENTE",
+    "cnae": "1093-7/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CHURRASQUEIRO(A) AMBULANTE INDEPENDENTE",
+    "cnae": "5612-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CHURRASQUEIRO(A) EM DOMICÍLIO INDEPENDENTE",
+    "cnae": "5620-1/02",
+    "iss": null,
+    "icms": null,
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CLICHERISTA INDEPENDENTE",
+    "cnae": "1821-1/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COBRADOR(A) DE DÍVIDAS INDEPENDENTE",
+    "cnae": "8291-1/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COLCHOEIRO(A) INDEPENDENTE",
+    "cnae": "3104-7/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COLETOR DE RESÍDUOS NÃO-PERIGOSOS INDEPENDENTE",
+    "cnae": "3811-4/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COLOCADOR(A) DE PIERCING INDEPENDENTE",
+    "cnae": "9609-2/06",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COLOCADOR(A) DE REVESTIMENTOS INDEPENDENTE",
+    "cnae": "4330-4/05",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE INSETICIDAS E RATICIDAS INDEPENDENTE",
+    "cnae": "4789-0/05",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PRODUTOS PARA PISCINAS INDEPENDENTE",
+    "cnae": "4789-0/05",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS E ALIMENTOS PARA ANIMAIS DE ESTIMAÇÃO (PET SHOP) INDEPENDENTE (NÃO INCLUI A VENDA DE MEDICAMENTOS)",
+    "cnae": "4789-0/04",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS DE ARMARINHO INDEPENDENTE",
+    "cnae": "4755-5/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS DE BEBÊ INDEPENDENTE",
+    "cnae": "4789-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS DE CAÇA, PESCA E CAMPING",
+    "cnae": "4763-6/04",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS DE CAMA, MESA E BANHO",
+    "cnae": "4755-5/03",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS DE COLCHOARIA INDEPENDENTE",
+    "cnae": "4754-7/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS DE CUTELARIA INDEPENDENTE",
+    "cnae": "4759-8/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS DE ILUMINAÇÃO INDEPENDENTE",
+    "cnae": "4754-7/03",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS DE JOALHERIA INDEPENDENTE",
+    "cnae": "4783-1/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS DE ÓPTICA INDEPENDENTE",
+    "cnae": "4774-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS DE RELOJOARIA INDEPENDENTE",
+    "cnae": "4783-1/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS DE TAPEÇARIA, CORTINAS E PERSIANAS INDEPENDENTE",
+    "cnae": "4759-8/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS DE VIAGEM INDEPENDENTE",
+    "cnae": "4782-2/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS DO VESTUÁRIO E ACESSÓRIOS",
+    "cnae": "4781-4/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS ERÓTICOS INDEPENDENTE",
+    "cnae": "4789-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS ESPORTIVOS INDEPENDENTE",
+    "cnae": "4763-6/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS FOTOGRÁFICOS E PARA FILMAGEM INDEPENDENTE",
+    "cnae": "4789-0/08",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS FUNERÁRIOS INDEPENDENTE",
+    "cnae": "4789-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS MÉDICOS E ORTOPÉDICOS",
+    "cnae": "4773-3/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS PARA HABITAÇÃO INDEPENDENTE",
+    "cnae": "4759-8/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ARTIGOS USADOS INDEPENDENTE",
+    "cnae": "4785-7/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE BEBIDAS INDEPENDENTE",
+    "cnae": "4723-7/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE BICICLETAS E TRICICLOS; PEÇAS E ACESSÓRIOS INDEPENDENTE",
+    "cnae": "4763-6/03",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE SUVENIRES, BIJUTERIAS E ARTESANATOS INDEPENDENTE",
+    "cnae": "4789-0/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE BRINQUEDOS E ARTIGOS RECREATIVOS",
+    "cnae": "4763-6/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE CAL, AREIA, PEDRA BRITADA, TIJOLOS E TELHAS INDEPENDENTE",
+    "cnae": "4744-0/04",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE CALÇADOS INDEPENDENTE",
+    "cnae": "4782-2/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE CARVÃO E LENHA INDEPENDENTE",
+    "cnae": "4789-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE CESTAS DE CAFÉ DA MANHÃ INDEPENDENTE",
+    "cnae": "4729-6/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE COSMÉTICOS E ARTIGOS DE PERFUMARIA INDEPENDENTE",
+    "cnae": "4772-5/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE DISCOS, CDS, DVDS E FITAS INDEPENDENTE",
+    "cnae": "4762-8/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE ELETRODOMÉSTICOS E EQUIPAMENTOS DE ÁUDIO E VÍDEO INDEPENDENTE",
+    "cnae": "4753-9/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE EMBALAGENS INDEPENDENTE",
+    "cnae": "4789-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE EQUIPAMENTOS DE TELEFONIA E COMUNICAÇÃO INDEPENDENTE",
+    "cnae": "4752-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE EQUIPAMENTOS E SUPRIMENTOS DE INFORMÁTICA INDEPENDENTE",
+    "cnae": "4751-2/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE EQUIPAMENTOS PARA ESCRITÓRIO",
+    "cnae": "4789-0/07",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE FERRAGENS E FERRAMENTAS INDEPENDENTE",
+    "cnae": "4744-0/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE FLORES, PLANTAS E FRUTAS ARTIFICIAIS INDEPENDENTE",
+    "cnae": "4789-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE INSTRUMENTOS MUSICAIS E ACESSÓRIOS INDEPENDENTE",
+    "cnae": "4756-3/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE LATICÍNIOS INDEPENDENTE",
+    "cnae": "4721-1/03",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE LUBRIFICANTES INDEPENDENTE",
+    "cnae": "4732-6/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE MADEIRA E ARTEFATOS INDEPENDENTE",
+    "cnae": "4744-0/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE MATERIAIS DE CONSTRUÇÃO EM GERAL",
+    "cnae": "4744-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE MATERIAIS HIDRÁULICOS INDEPENDENTE",
+    "cnae": "4744-0/03",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE MATERIAL ELÉTRICO INDEPENDENTE",
+    "cnae": "4742-3/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE MIUDEZAS E QUINQUILHARIAS INDEPENDENTE",
+    "cnae": "4713-0/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE MOLDURAS E QUADROS INDEPENDENTE",
+    "cnae": "4789-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE MÓVEIS INDEPENDENTE",
+    "cnae": "4754-7/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE OBJETOS DE ARTE INDEPENDENTE",
+    "cnae": "4789-0/03",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PEÇAS E ACESSÓRIOS NOVOS PARA",
+    "cnae": "4541-2/06",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PEÇAS E ACESSÓRIOS NOVOS PARA VEÍCULOS AUTOMOTORES INDEPENDENTE",
+    "cnae": "4530-7/03",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PEÇAS E ACESSÓRIOS PARA APARELHOS",
+    "cnae": "4757-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PEÇAS E ACESSÓRIOS USADOS PARA",
+    "cnae": "4541-2/07",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PEÇAS E ACESSÓRIOS USADOS PARA VEÍCULOS AUTOMOTORES INDEPENDENTE",
+    "cnae": "4530-7/04",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PERUCAS INDEPENDENTE",
+    "cnae": "4789-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PLANTAS, FLORES NATURAIS, VASOS E ADUBOS INDEPENDENTE",
+    "cnae": "4789-0/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PNEUMÁTICOS E CÂMARAS-DE-AR",
+    "cnae": "4530-7/05",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PRODUTOS DE HIGIENE PESSOAL",
+    "cnae": "4772-5/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PRODUTOS DE LIMPEZA INDEPENDENTE",
+    "cnae": "4789-0/05",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PRODUTOS DE PANIFICAÇÃO INDEPENDENTE",
+    "cnae": "4721-1/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PRODUTOS DE TABACARIA INDEPENDENTE",
+    "cnae": "4729-6/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PRODUTOS NATURAIS INDEPENDENTE",
+    "cnae": "4729-6/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PRODUTOS PARA FESTAS E NATAL",
+    "cnae": "4789-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE PRODUTOS RELIGIOSOS INDEPENDENTE",
+    "cnae": "4789-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE REDES PARA DORMIR INDEPENDENTE",
+    "cnae": "4789-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE SISTEMA DE SEGURANÇA RESIDENCIAL",
+    "cnae": "4759-8/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE TECIDOS INDEPENDENTE",
+    "cnae": "4755-5/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE TINTAS E MATERIAIS PARA PINTURA",
+    "cnae": "4741-5/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE TOLDOS E PAPEL DE PAREDE INDEPENDENTE",
+    "cnae": "4759-8/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMERCIANTE DE VIDROS INDEPENDENTE",
+    "cnae": "4743-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COMPOTEIRO(A) INDEPENDENTE",
+    "cnae": "1031-7/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CONFECCIONADOR(A) DE CARIMBOS INDEPENDENTE",
+    "cnae": "3299-0/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CONFEITEIRO(A) INDEPENDENTE",
+    "cnae": "1091-1/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COSTUREIRO(A) DE ROUPAS, EXCETO SOB MEDIDA, INDEPENDENTE",
+    "cnae": "1412-6/01",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COSTUREIRO(A) DE ROUPAS SOB MEDIDA INDEPENDENTE",
+    "cnae": "1412-6/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "COZINHEIRO(A) QUE FORNECE REFEIÇÕES PRONTAS E EMBALADAS PARA CONSUMO INDEPENDENTE",
+    "cnae": "5620-1/04",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CRIADOR(A) DE ANIMAIS DOMÉSTICOS INDEPENDENTE",
+    "cnae": "0159-8/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CRIADOR(A) DE PEIXES ORNAMENTAIS EM ÁGUA DOCE INDEPENDENTE",
+    "cnae": "0322-1/04",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CRIADOR(A) DE PEIXES ORNAMENTAIS EM ÁGUA SALGADA INDEPENDENTE",
+    "cnae": "0321-3/04",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CROCHETEIRO(A) INDEPENDENTE",
+    "cnae": "1422-3/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CUIDADOR(A) DE ANIMAIS (PET SITTER) INDEPENDENTE",
+    "cnae": "9609-2/08",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CUIDADOR(A) DE IDOSOS E ENFERMOS INDEPENDENTE",
+    "cnae": "8712-3/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CUNHADOR(A) DE MOEDAS E MEDALHAS INDEPENDENTE",
+    "cnae": "3211-6/03",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CURTIDOR DE COURO INDEPENDENTE",
+    "cnae": "1510-6/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "CUSTOMIZADOR(A) DE ROUPAS INDEPENDENTE",
+    "cnae": "1340-5/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "DEPILADOR(A) INDEPENDENTE",
+    "cnae": "9602-5/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "DIARISTA INDEPENDENTE",
+    "cnae": "9700-5/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "DIGITADOR(A) INDEPENDENTE",
+    "cnae": "8219-9/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "DISC JOCKEY (DJ) OU VIDEO JOCKEY (VJ) INDEPENDENTE",
+    "cnae": "9001-9/06",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "DISTRIBUIDOR(A) DE ÁGUA POTÁVEL EM CAMINHÃO PIPA",
+    "cnae": "3600-6/02",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "DOCEIRO(A) INDEPENDENTE",
+    "cnae": "5620-1/04",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "DUBLADOR(A) INDEPENDENTE",
+    "cnae": "5912-0/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "EDITOR(A) DE JORNAIS DIÁRIOS INDEPENDENTE",
+    "cnae": "5812-3/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "EDITOR(A) DE JORNAIS NÃO DIÁRIOS INDEPENDENTE",
+    "cnae": "5812-3/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "EDITOR(A) DE LISTA DE DADOS E DE OUTRAS INFORMAÇÕES INDEPENDENTE",
+    "cnae": "5819-1/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "EDITOR(A) DE LIVROS INDEPENDENTE",
+    "cnae": "5811-5/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "EDITOR(A) DE REVISTAS INDEPENDENTE",
+    "cnae": "5813-1/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "EDITOR(A) DE VÍDEO INDEPENDENTE",
+    "cnae": "5912-0/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ELETRICISTA DE AUTOMÓVEIS INDEPENDENTE",
+    "cnae": "4520-0/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ELETRICISTA EM RESIDÊNCIAS E ESTABELECIMENTOS COMERCIAIS INDEPENDENTE",
+    "cnae": "4321-5/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ENCADERNADOR(A)/",
+    "cnae": "1822-9/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ENCANADOR INDEPENDENTE",
+    "cnae": "4322-3/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ENGRAXATE INDEPENDENTE",
+    "cnae": "9609-2/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ENTREGADOR DE MALOTES INDEPENDENTE",
+    "cnae": "5320-2/01",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ENVASADOR(A) E EMPACOTADOR(A) INDEPENDENTE",
+    "cnae": "8292-0/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ESTAMPADOR(A) DE PEÇAS DO VESTUÁRIO INDEPENDENTE",
+    "cnae": "1340-5/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ESTETICISTA DE ANIMAIS DOMÉSTICOS INDEPENDENTE",
+    "cnae": "9609-2/08",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ESTETICISTA INDEPENDENTE",
+    "cnae": "9602-5/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ESTOFADOR(A) INDEPENDENTE",
+    "cnae": "9529-1/05",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE AÇÚCAR MASCAVO INDEPENDENTE",
+    "cnae": "1071-6/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE AMENDOIM E CASTANHA DE CAJU TORRADOS E SALGADOS INDEPENDENTE",
+    "cnae": "1031-7/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE ALIMENTOS PRONTOS CONGELADOS",
+    "cnae": "1096-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE AMIDO E FÉCULAS DE VEGETAIS INDEPENDENTE",
+    "cnae": "1065-1/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE ARTEFATOS DE FUNILARIA INDEPENDENTE",
+    "cnae": "2532-2/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE ARTEFATOS ESTAMPADOS DE METAL, SOB",
+    "cnae": "2532-2/01",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE ARTEFATOS PARA PESCA E ESPORTE INDEPENDENTE",
+    "cnae": "3230-2/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE ARTEFATOS TÊXTEIS PARA USO DOMÉSTICO INDEPENDENTE",
+    "cnae": "1351-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE ARTIGOS DE CUTELARIA INDEPENDENTE",
+    "cnae": "2541-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE AVIAMENTOS PARA COSTURA INDEPENDENTE",
+    "cnae": "3299-0/05",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE BALAS, CONFEITOS E FRUTAS CRISTALIZADAS INDEPENDENTE",
+    "cnae": "1093-7/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE BOLSAS/BOLSEIRO INDEPENDENTE",
+    "cnae": "1521-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE BRINQUEDOS NÃO ELETRÔNICOS",
+    "cnae": "3240-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE CALÇADOS DE BORRACHA, MADEIRA E TECIDOS E FIBRAS INDEPENDENTE",
+    "cnae": "1539-4/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE CALÇADOS DE COURO INDEPENDENTE",
+    "cnae": "1531-9/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE CHÁ INDEPENDENTE",
+    "cnae": "1099-6/05",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE CINTOS/CINTEIRO INDEPENDENTE",
+    "cnae": "1414-2/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE CONSERVAS DE LEGUMES E OUTROS VEGETAIS INDEPENDENTE",
+    "cnae": "1032-5/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE EMBALAGENS DE CARTOLINA E PAPEL-CARTÃO INDEPENDENTE",
+    "cnae": "1732-0/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE EMBALAGENS DE MADEIRA INDEPENDENTE",
+    "cnae": "1623-4/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE EMBALAGENS DE PAPEL INDEPENDENTE",
+    "cnae": "1731-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE ESPECIARIAS INDEPENDENTE",
+    "cnae": "1095-3/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE CONSERVAS DE FRUTAS INDEPENDENTE",
+    "cnae": "1031-7/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE ESQUADRIAS METÁLICAS, SOB ENCOMENDA OU NÃO, INDEPENDENTE",
+    "cnae": "2512-8/00",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE FIOS DE ALGODÃO INDEPENDENTE",
+    "cnae": "1311-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE FIOS DE LINHO, RAMI, JUTA, SEDA E LÃ INDEPENDENTE",
+    "cnae": "1312-0/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE FUMO E DERIVADOS DO FUMO INDEPENDENTE",
+    "cnae": "1220-4/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE GELÉIA DE MOCOTÓ INDEPENDENTE",
+    "cnae": "1099-6/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE GELO COMUM INDEPENDENTE",
+    "cnae": "1099-6/04",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE GUARDA-CHUVAS E SIMILARES INDEPENDENTE",
+    "cnae": "3299-0/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE GUARDANAPOS E COPOS DE PAPEL",
+    "cnae": "1742-7/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE INSTRUMENTOS MUSICAIS INDEPENDENTE",
+    "cnae": "3220-5/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE JOGOS RECREATIVOS INDEPENDENTE",
+    "cnae": "3240-0/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE LATICÍNIOS INDEPENDENTE",
+    "cnae": "1052-0/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE LETREIROS, PLACAS E PAINÉIS NÃO LUMINOSOS, SOB ENCOMENDA OU NÃO, INDEPENDENTE",
+    "cnae": "3299-0/03",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE LUMINÁRIAS E OUTROS EQUIPAMENTOS DE ILUMINAÇÃO INDEPENDENTE",
+    "cnae": "2740-6/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE MALAS INDEPENDENTE",
+    "cnae": "1521-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE MASSAS ALIMENTÍCIAS INDEPENDENTE",
+    "cnae": "1094-5/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE MEIAS INDEPENDENTE",
+    "cnae": "1421-5/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE MOCHILAS E CARTEIRAS INDEPENDENTE",
+    "cnae": "1521-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE PAINÉIS E LETREIROS LUMINOSOS",
+    "cnae": "3299-0/04",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE PÃO DE QUEIJO CONGELADO INDEPENDENTE",
+    "cnae": "1091-1/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE PAPEL INDEPENDENTE",
+    "cnae": "1721-4/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE PARTES DE PEÇAS DO VESTUÁRIO - FACÇÃO INDEPENDENTE",
+    "cnae": "1412-6/03",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE PARTES DE ROUPAS ÍNTIMAS - FACÇÃO",
+    "cnae": "1411-8/02",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE PARTES DE ROUPAS PROFISSIONAIS - FACÇÃO INDEPENDENTE",
+    "cnae": "1413-4/03",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE PARTES PARA CALÇADOS INDEPENDENTE",
+    "cnae": "1540-8/00",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE POLPAS DE FRUTAS INDEPENDENTE",
+    "cnae": "1031-7/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE PRODUTOS DE SOJA INDEPENDENTE",
+    "cnae": "1099-6/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE PRODUTOS DE TECIDO NÃO TECIDO PARA USO ODONTO-MÉDICO-HOSPITALAR INDEPENDENTE",
+    "cnae": "3292-2/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE PRODUTOS DERIVADOS DE CARNE INDEPENDENTE",
+    "cnae": "1013-9/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE PRODUTOS DERIVADOS DO ARROZ",
+    "cnae": "1061-9/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE RAPADURA E MELAÇO INDEPENDENTE",
+    "cnae": "1071-6/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE REFRESCOS, XAROPES E PÓS PARA REFRESCOS INDEPENDENTE",
+    "cnae": "1122-4/03",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE ROUPAS ÍNTIMAS INDEPENDENTE",
+    "cnae": "1411-8/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE SUCOS CONCENTRADOS DE FRUTAS, HORTALIÇAS E LEGUMES INDEPENDENTE",
+    "cnae": "1033-3/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE SUCOS DE FRUTAS, HORTALIÇAS E LEGUMES INDEPENDENTE",
+    "cnae": "1033-3/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FABRICANTE DE VELAS, INCLUSIVE DECORATIVAS INDEPENDENTE",
+    "cnae": "3299-0/06",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FARINHEIRO DE MANDIOCA INDEPENDENTE",
+    "cnae": "1063-5/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FARINHEIRO DE MILHO INDEPENDENTE",
+    "cnae": "1064-3/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FERRAMENTEIRO(A) INDEPENDENTE",
+    "cnae": "2543-8/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FERREIRO/FORJADOR INDEPENDENTE",
+    "cnae": "2543-8/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FILMADOR(A) INDEPENDENTE",
+    "cnae": "7420-0/04",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FORNECEDOR(A) DE ALIMENTOS PREPARADOS PARA EMPRESAS INDEPENDENTE",
+    "cnae": "5620-1/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FOSSEIRO (LIMPADOR DE FOSSA) INDEPENDENTE",
+    "cnae": "3702-9/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FOTOCOPIADOR(A) INDEPENDENTE",
+    "cnae": "8219-9/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FOTÓGRAFO(A) INDEPENDENTE",
+    "cnae": "7420-0/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FOTÓGRAFO(A) AÉREO INDEPENDENTE",
+    "cnae": "7420-0/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FOTÓGRAFO(A) SUBMARINO INDEPENDENTE",
+    "cnae": "7420-0/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "FUNILEIRO/LANTERNEIRO INDEPENDENTE",
+    "cnae": "4520-0/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "GALVANIZADOR(A) INDEPENDENTE",
+    "cnae": "2539-0/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "GESSEIRO(A) INDEPENDENTE",
+    "cnae": "4330-4/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "GRAVADOR(A) DE CARIMBOS INDEPENDENTE",
+    "cnae": "8299-7/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "GUARDADOR(A) DE MÓVEIS INDEPENDENTE",
+    "cnae": "5211-7/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "GUIA DE TURISMO INDEPENDENTE",
+    "cnae": "7912-1/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "GUINCHEIRO INDEPENDENTE (REBOQUE DE VEÍCULOS)",
+    "cnae": "5229-0/02",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "HUMORISTA E CONTADOR DE HISTÓRIAS INDEPENDENTE",
+    "cnae": "9001-9/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTALADOR(A) DE ANTENAS DE TV INDEPENDENTE",
+    "cnae": "4321-5/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTALADOR(A) DE EQUIPAMENTOS DE SEGURANÇA DOMICILIAR E EMPRESARIAL, SEM PRESTAÇÃO DE SERVIÇOS DE VIGILÂNCIA SEGURANÇA INDEPENDENTE",
+    "cnae": "4321-5/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTALADOR(A) DE EQUIPAMENTOS PARA ORIENTAÇÃO À",
+    "cnae": "4329-1/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTALADOR(A) DE ISOLANTES ACÚSTICOS E DE VIBRAÇÃO INDEPENDENTE",
+    "cnae": "4329-1/05",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTALADOR(A) DE ISOLANTES TÉRMICOS INDEPENDENTE",
+    "cnae": "4329-1/05",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTALADOR(A) DE MÁQUINAS E EQUIPAMENTOS INDUSTRIAIS INDEPENDENTE",
+    "cnae": "3321-0/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTALADOR(A) DE PAINÉIS PUBLICITÁRIOS INDEPENDENTE",
+    "cnae": "4329-1/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTALADOR(A) DE REDE DE COMPUTADORES INDEPENDENTE",
+    "cnae": "6190-6/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTALADOR(A) DE SISTEMA DE PREVENÇÃO CONTRA INCÊNDIO INDEPENDENTE",
+    "cnae": "4322-3/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTALADOR(A) E REPARADOR (A) DE ACESSÓRIOS AUTOMOTIVOS INDEPENDENTE",
+    "cnae": "4520-0/07",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTALADOR(A) E REPARADOR(A) DE ELEVADORES, ESCADAS E ESTEIRAS ROLANTES INDEPENDENTE",
+    "cnae": "4329-1/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTALADOR(A) E REPARADOR DE COFRES, TRANCAS E TRAVAS DE SEGURANÇA INDEPENDENTE",
+    "cnae": "8020-0/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTALADOR(A) E REPARADOR(A) DE SISTEMAS CENTRAIS DE AR CONDICIONADO, DE VENTILAÇÃO E REFRIGERAÇÃO INDEPENDENTE",
+    "cnae": "4322-3/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTRUTOR(A) DE ARTE E CULTURA EM GERAL INDEPENDENTE",
+    "cnae": "8592-9/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTRUTOR(A) DE ARTES CÊNICAS INDEPENDENTE",
+    "cnae": "8592-9/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTRUTOR(A) DE CURSOS GERENCIAIS INDEPENDENTE",
+    "cnae": "8599-6/04",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTRUTOR(A) DE CURSOS PREPARATÓRIOS INDEPENDENTE",
+    "cnae": "8599-6/05",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTRUTOR(A) DE IDIOMAS INDEPENDENTE",
+    "cnae": "8593-7/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTRUTOR(A) DE INFORMÁTICA INDEPENDENTE",
+    "cnae": "8599-6/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "INSTRUTOR(A) DE MÚSICA INDEPENDENTE",
+    "cnae": "8592-9/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "JARDINEIRO(A) INDEPENDENTE",
+    "cnae": "8130-3/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "JORNALEIRO(A) INDEPENDENTE",
+    "cnae": "4761-0/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LAPIDADOR(A) INDEPENDENTE",
+    "cnae": "3211-6/01",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LAVADEIRO(A) DE ROUPAS INDEPENDENTE",
+    "cnae": "9601-7/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LAVADEIRO(A) DE ROUPAS PROFISSIONAIS INDEPENDENTE",
+    "cnae": "9601-7/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LAVADOR(A) E POLIDOR DE CARRO INDEPENDENTE",
+    "cnae": "4520-0/05",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LAVADOR(A) DE ESTOFADO E SOFÁ INDEPENDENTE",
+    "cnae": "9609-2/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LIVREIRO(A) INDEPENDENTE",
+    "cnae": "4761-0/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR DE ANDAIMES INDEPENDENTE",
+    "cnae": "7732-2/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE APARELHOS DE JOGOS ELETRÔNICOS",
+    "cnae": "7729-2/01",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE BICICLETAS, INDEPENDENTE",
+    "cnae": "7721-7/00",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE EQUIPAMENTOS CIENTÍFICOS, MÉDICOS E HOSPITALARES, SEM OPERADOR INDEPENDENTE",
+    "cnae": "7739-0/02",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE EQUIPAMENTOS RECREATIVOS E ESPORTIVOS INDEPENDENTE",
+    "cnae": "7721-7/00",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE FITAS DE VÍDEO, DVDS E SIMILARES",
+    "cnae": "7722-5/00",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE LIVROS, REVISTAS, PLANTAS E FLORES",
+    "cnae": "7729-2/99",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE MÁQUINAS E EQUIPAMENTOS AGRÍCOLAS SEM OPERADOR INDEPENDENTE",
+    "cnae": "7731-4/00",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE MÁQUINAS E EQUIPAMENTOS PARA",
+    "cnae": "7732-2/01",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE MÁQUINAS E EQUIPAMENTOS PARA ESCRITÓRIO INDEPENDENTE",
+    "cnae": "7733-1/00",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE MATERIAL E EQUIPAMENTO ESPORTIVO, INDEPENDENTE",
+    "cnae": "7721-7/00",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE MATERIAL MÉDICO INDEPENDENTE",
+    "cnae": "7729-2/03",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE MOTOCICLETA, SEM CONDUTOR, INDEPENDENTE",
+    "cnae": "7719-5/99",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE MÓVEIS E UTENSÍLIOS, INCLUSIVE PARA FESTAS INDEPENDENTE",
+    "cnae": "7729-2/02",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE INSTRUMENTOS MUSICAIS INDEPENDENTE",
+    "cnae": "7729-2/02",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE OBJETOS DO VESTUÁRIO, JÓIAS E ACESSÓRIOS INDEPENDENTE",
+    "cnae": "7723-3/00",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE OUTRAS MÁQUINAS E EQUIPAMENTOS",
+    "cnae": "7739-0/99",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE PALCOS, COBERTURAS E OUTRAS ESTRUTURAS DE USO TEMPORÁRIO, EXCETO ANDAIMES INDEPENDENTE",
+    "cnae": "7739-0/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCADOR(A) DE VÍDEO GAMES, INDEPENDENTE",
+    "cnae": "7722-5/00",
+    "iss": "N",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "LOCUTOR(A) DE MENSAGENS FONADAS E AO VIVO",
+    "cnae": "9609-2/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MÁGICO(A) INDEPENDENTE",
+    "cnae": "9329-8/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MANICURE/PEDICURE INDEPENDENTE",
+    "cnae": "9602-5/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MAQUIADOR(A) INDEPENDENTE",
+    "cnae": "9602-5/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MARCENEIRO(A) SOB ENCOMENDA OU NÃO, INDEPENDENTE",
+    "cnae": "3101-2/00",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MARMITEIRO(A) INDEPENDENTE",
+    "cnae": "5620-1/04",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MECÂNICO(A) DE MOTOCICLETAS E MOTONETAS INDEPENDENTE",
+    "cnae": "4543-9/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MECÂNICO(A) DE VEÍCULOS INDEPENDENTE",
+    "cnae": "4520-0/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MERCEEIRO(A)/VENDEIRO(A) INDEPENDENTE",
+    "cnae": "4712-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MERGULHADOR(A) (ESCAFANDRISTA) INDEPENDENTE",
+    "cnae": "7490-1/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MOENDEIRO(A) INDEPENDENTE",
+    "cnae": "1069-4/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MONTADOR(A) DE MÓVEIS INDEPENDENTE",
+    "cnae": "3329-5/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MONTADOR(A) E INSTALADOR DE SISTEMAS E EQUIPAMENTOS DE ILUMINAÇÃO E SINALIZAÇÃO EM VIAS PÚBLICAS, PORTOS E AEROPORTOS INDEPENDENTE",
+    "cnae": "4329-1/04",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MOTOBOY INDEPENDENTE",
+    "cnae": "5320-2/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MOTORISTA (POR APLICATIVO OU NÃO) INDEPENDENTE",
+    "cnae": "4923-0/02",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MOTOTAXISTA INDEPENDENTE",
+    "cnae": "4923-0/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MOVELEIRO(A) INDEPENDENTE",
+    "cnae": "3103-9/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "MOVELEIRO(A) DE MÓVEIS METÁLICOS INDEPENDENTE",
+    "cnae": "3102-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "OLEIRO(A) INDEPENDENTE",
+    "cnae": "2342-7/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "ORGANIZADOR(A) DE EXCURSÕES EM VEÍCULO PRÓPRIO, MUNICIPAL INDEPENDENTE",
+    "cnae": "4929-9/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "OURIVES INDEPENDENTE",
+    "cnae": "9529-1/06",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PADEIRO(A) INDEPENDENTE",
+    "cnae": "1091-1/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PANFLETEIRO(A) INDEPENDENTE",
+    "cnae": "7319-0/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PAPELEIRO(A) INDEPENDENTE",
+    "cnae": "4761-0/03",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PASTILHEIRO(A) INDEPENDENTE",
+    "cnae": "4330-4/05",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PEDREIRO INDEPENDENTE",
+    "cnae": "4399-1/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PEIXEIRO(A) INDEPENDENTE",
+    "cnae": "4722-9/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PINTOR(A) DE AUTOMÓVEIS INDEPENDENTE",
+    "cnae": "4520-0/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PINTOR(A) DE PAREDE INDEPENDENTE",
+    "cnae": "4330-4/04",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PIPOQUEIRO(A) INDEPENDENTE",
+    "cnae": "5612-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PISCINEIRO(A) INDEPENDENTE",
+    "cnae": "8129-0/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PIZZAIOLO(A) EM DOMICÍLIO INDEPENDENTE",
+    "cnae": "5620-1/02",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PRESTADOR(A) DE SERVIÇOS DE COLHEITA SOB CONTRATO DE EMPREITADA INDEPENDENTE",
+    "cnae": "0161-0/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PRESTADOR(A) DE SERVIÇOS DE PODA SOB CONTRATO DE EMPREITADA INDEPENDENTE",
+    "cnae": "0161-0/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PRESTADOR(A) DE SERVIÇOS DE PREPARAÇÃO DE TERRENOS SOB CONTRATO DE EMPREITADA INDEPENDENTE",
+    "cnae": "0161-0/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PRESTADOR(A) DE SERVIÇOS DE ROÇAGEM, DESTOCAMENTO, LAVRAÇÃO, GRADAGEM E SULCAMENTO SOB CONTRATO DE EMPREITADA INDEPENDENTE",
+    "cnae": "0161-0/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PRESTADOR(A) DE SERVIÇOS DE SEMEADURA SOB CONTRATO DE EMPREITADA INDEPENDENTE",
+    "cnae": "0161-0/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROFESSOR(A) PARTICULAR INDEPENDENTE",
+    "cnae": "8599-6/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROMOTOR(A) DE EVENTOS INDEPENDENTE",
+    "cnae": "8230-0/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROMOTOR(A) DE TURISMO LOCAL INDEPENDENTE",
+    "cnae": "7990-2/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROMOTOR(A) DE VENDAS INDEPENDENTE",
+    "cnae": "7319-0/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE ALBERGUE NÃO ASSISTENCIAL",
+    "cnae": "5590-6/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE BAR E CONGÊNERES, COM ENTRETENIMENTO, INDEPENDENTE",
+    "cnae": "5611-2/05",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE BAR E CONGÊNERES, SEM",
+    "cnae": "5611-2/04",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE CAMPING INDEPENDENTE",
+    "cnae": "5590-6/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE CANTINAS INDEPENDENTE",
+    "cnae": "5620-1/03",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE CARRO DE SOM PARA FINS PUBLICITÁRIOS INDEPENDENTE",
+    "cnae": "7319-0/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE CASA DE CHÁ INDEPENDENTE",
+    "cnae": "5611-2/03",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE CASA DE SUCOS INDEPENDENTE",
+    "cnae": "5611-2/03",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE CASAS DE FESTAS E EVENTOS",
+    "cnae": "8230-0/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE ESTACIONAMENTO DE VEÍCULOS",
+    "cnae": "5223-1/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE FLIPERAMA INDEPENDENTE",
+    "cnae": "9329-8/04",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE HOSPEDARIA INDEPENDENTE",
+    "cnae": "5590-6/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE LANCHONETE INDEPENDENTE",
+    "cnae": "5611-2/03",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE PENSÃO INDEPENDENTE",
+    "cnae": "5590-6/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE RESTAURANTE INDEPENDENTE",
+    "cnae": "5611-2/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE SALA DE ACESSO À INTERNET",
+    "cnae": "8299-7/07",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "PROPRIETÁRIO(A) DE SALÃO DE JOGOS DE SINUCA E BILHAR INDEPENDENTE",
+    "cnae": "9329-8/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "QUEIJEIRO(A)/MANTEIGUEIRO(A) INDEPENDENTE",
+    "cnae": "1052-0/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "QUITANDEIRO(A) INDEPENDENTE",
+    "cnae": "4724-5/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "QUITANDEIRO(A) AMBULANTE INDEPENDENTE",
+    "cnae": "5612-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "RECARREGADOR(A) DE CARTUCHOS PARA EQUIPAMENTOS DE INFORMÁTICA INDEPENDENTE",
+    "cnae": "4751-2/02",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "RECICLADOR(A) DE BORRACHA, MADEIRA, PAPEL E VIDRO INDEPENDENTE",
+    "cnae": "3839-4/99",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "RECICLADOR (A) DE MATERIAIS METÁLICOS, EXCETO ALUMÍNIO INDEPENDENTE",
+    "cnae": "3831-9/99",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "RECICLADOR (A) DE MATERIAIS PLÁSTICOS INDEPENDENTE",
+    "cnae": "3832-7/00",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "RECICLADOR (A) DE SUCATAS DE ALUMÍNIO INDEPENDENTE",
+    "cnae": "3831-9/01",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REDEIRO(A) INDEPENDENTE",
+    "cnae": "1353-7/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "RELOJOEIRO(A) INDEPENDENTE",
+    "cnae": "9529-1/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "RENDEIRO(A) INDEPENDENTE",
+    "cnae": "1359-6/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE APARELHOS E EQUIPAMENTOS PARA",
+    "cnae": "3313-9/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR (A) DE ARTIGOS DE TAPEÇARIA INDEPENDENTE",
+    "cnae": "9529-1/05",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE ARTIGOS E ACESSÓRIOS DO VESTUÁRIO INDEPENDENTE",
+    "cnae": "9529-1/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE BALANÇAS INDUSTRIAIS E COMERCIAIS INDEPENDENTE",
+    "cnae": "3314-7/10",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE BATERIAS E ACUMULADORES ELÉTRICOS, EXCETO PARA VEÍCULOS, INDEPENDENTE",
+    "cnae": "3313-9/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE BICICLETA INDEPENDENTE",
+    "cnae": "9529-1/04",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE BRINQUEDOS INDEPENDENTE",
+    "cnae": "9529-1/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE CORDAS, VELAMES E LONAS INDEPENDENTE",
+    "cnae": "3319-8/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE EMBARCAÇÕES PARA ESPORTE E LAZER",
+    "cnae": "3317-1/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE EQUIPAMENTOS ESPORTIVOS INDEPENDENTE",
+    "cnae": "9529-1/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE EQUIPAMENTOS HIDRÁULICOS E PNEUMÁTICOS, EXCETO VÁLVULAS, INDEPENDENTE",
+    "cnae": "3314-7/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE EQUIPAMENTOS MÉDICO-HOSPITALARES NÃO ELETRÔNICOS INDEPENDENTE",
+    "cnae": "3319-8/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE EXTINTOR DE INCÊNDIO INDEPENDENTE",
+    "cnae": "3314-7/10",
+    "iss": null,
+    "icms": null,
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE FILTROS INDUSTRIAIS INDEPENDENTE",
+    "cnae": "3314-7/10",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE GERADORES, TRANSFORMADORES E MOTORES ELÉTRICOS INDEPENDENTE",
+    "cnae": "3313-9/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE GUARDA CHUVA E SOMBRINHAS",
+    "cnae": "9529-1/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE INSTRUMENTOS MUSICAIS INDEPENDENTE",
+    "cnae": "9529-1/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE MÁQUINAS DE ESCREVER, CALCULAR E DE OUTROS EQUIPAMENTOS NÃO ELETRÔNICOS PARA ESCRITÓRIO INDEPENDENTE",
+    "cnae": "3314-7/09",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE MÁQUINAS E APARELHOS DE REFRIGERAÇÃO E VENTILAÇÃO PARA USO INDUSTRIAL E COMERCIAL INDEPENDENTE",
+    "cnae": "3314-7/07",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE MÁQUINAS GRÁFICA INDEPENDENTE",
+    "cnae": "3314-7/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE MÁQUINAS E EQUIPAMENTOS PARA A INDÚSTRIA DA MADEIRA INDEPENDENTE",
+    "cnae": "3314-7/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE MÁQUINAS E EQUIPAMENTOS PARA A",
+    "cnae": "3314-7/20",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE MÁQUINAS E EQUIPAMENTOS PARA AGRICULTURA E PECUÁRIA INDEPENDENTE",
+    "cnae": "3314-7/11",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE MÁQUINAS E EQUIPAMENTOS PARA AS",
+    "cnae": "3314-7/19",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) INDEPENDENTE",
+    "cnae": "3314-7/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) INDEPENDENTE",
+    "cnae": "3314-7/10",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE MÁQUINAS PARA ENCADERNAÇÃO",
+    "cnae": "3314-7/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE MÁQUINAS, APARELHOS E EQUIPAMENTOS PARA INSTALAÇÕES TÉRMICAS INDEPENDENTE",
+    "cnae": "3314-7/06",
+    "iss": null,
+    "icms": null,
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE MÓVEIS INDEPENDENTE",
+    "cnae": "9529-1/05",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE PANELAS (PANELEIRO) INDEPENDENTE",
+    "cnae": "9529-1/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE TANQUES, RESERVATÓRIOS METÁLICOS E CALDEIRAS, EXCETO PARA VEÍCULOS, INDEPENDENTE",
+    "cnae": "3311-2/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE TOLDOS E PERSIANAS INDEPENDENTE",
+    "cnae": "9529-1/05",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE TONÉIS, BARRIS E PALETES DE MADEIRA INDEPENDENTE",
+    "cnae": "3319-8/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE TRATORES AGRÍCOLAS INDEPENDENTE",
+    "cnae": "3314-7/12",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REPARADOR(A) DE VEÍCULOS DE TRAÇÃO ANIMAL INDEPENDENTE",
+    "cnae": "3319-8/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "RESTAURADOR(A) DE INSTRUMENTOS MUSICAIS HISTÓRICOS INDEPENDENTE",
+    "cnae": "3319-8/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "RESTAURADOR(A) INDEPENDENTE",
+    "cnae": "3319-8/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "RESTAURADOR(A) DE LIVROS INDEPENDENTE",
+    "cnae": "9529-1/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "RESTAURADOR(A) DE OBRAS DE ARTE INDEPENDENTE",
+    "cnae": "9002-7/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "RETIFICADOR(A) DE MOTORES PARA VEÍCULOS AUTOMOTORES INDEPENDENTE",
+    "cnae": "2950-6/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "REVELADOR(A) FOTOGRÁFICO INDEPENDENTE",
+    "cnae": "7420-0/03",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "SALGADEIRO(A) INDEPENDENTE",
+    "cnae": "5620-1/04",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "SALINEIRO/EXTRATOR DE SAL MARINHO INDEPENDENTE",
+    "cnae": "0892-4/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "SALSICHEIRO(A)/LINGUICEIRO(A) INDEPENDENTE",
+    "cnae": "1013-9/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "SAPATEIRO(A)",
+    "cnae": "9529-1/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "SELEIRO(A) INDEPENDENTE",
+    "cnae": "1529-7/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "SERIGRAFISTA INDEPENDENTE",
+    "cnae": "1813-0/99",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "SERIGRAFISTA PUBLICITÁRIO INDEPENDENTE",
+    "cnae": "1813-0/01",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "SERRALHEIRO(A), EXCETO PARA ESQUADRIAS, SOB ENCOMENDA OU NÃO, INDEPENDENTE",
+    "cnae": "2542-0/00",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "SINTEQUEIRO(A) INDEPENDENTE",
+    "cnae": "4330-4/05",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "SOLDADOR(A)/BRASADOR(A) INDEPENDENTE",
+    "cnae": "2539-0/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "SORVETEIRO(A) INDEPENDENTE",
+    "cnae": "4729-6/99",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "SORVETEIRO(A) AMBULANTE INDEPENDENTE",
+    "cnae": "5612-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TANOEIRO(A) INDEPENDENTE",
+    "cnae": "1623-4/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TAPECEIRO(A) INDEPENDENTE",
+    "cnae": "1352-9/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TATUADOR(A) INDEPENDENTE",
+    "cnae": "9609-2/06",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TAXISTA INDEPENDENTE",
+    "cnae": "4923-0/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TECELÃO(Ã) INDEPENDENTE",
+    "cnae": "1322-7/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TECELÃO(Ã) DE ALGODÃO INDEPENDENTE",
+    "cnae": "1321-9/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TÉCNICO(A) DE SONORIZAÇÃO E DE ILUMINAÇÃO INDEPENDENTE",
+    "cnae": "9001-9/06",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TÉCNICO(A) DE MANUTENÇÃO DE COMPUTADOR INDEPENDENTE",
+    "cnae": "9511-8/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TÉCNICO(A) DE MANUTENÇÃO DE ELETRODOMÉSTICOS",
+    "cnae": "9521-5/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TÉCNICO(A) DE MANUTENÇÃO DE TELEFONIA INDEPENDENTE",
+    "cnae": "9512-6/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TELHADOR(A) INDEPENDENTE",
+    "cnae": "4399-1/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TINTUREIRO(A) INDEPENDENTE",
+    "cnae": "9601-7/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TORNEIRO(A) MECÂNICO INDEPENDENTE",
+    "cnae": "2539-0/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TOSADOR(A) DE ANIMAIS DOMÉSTICOS INDEPENDENTE",
+    "cnae": "9609-2/08",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TOSQUIADOR(A) INDEPENDENTE",
+    "cnae": "0162-8/02",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRANSPORTADOR(A) AQUAVIÁRIO PARA PASSEIOS TURÍSTICOS INDEPENDENTE",
+    "cnae": "5099-8/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRANSPORTADOR(A) ESCOLAR INDEPENDENTE",
+    "cnae": "4924-8/00",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRANSPORTADOR(A) DE MUDANÇAS INDEPENDENTE",
+    "cnae": "4930-2/04",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRANSPORTADOR(A) INTERMUNICIPAL COLETIVO DE PASSAGEIROS SOB FRETE EM REGIÃO METROPOLITANA INDEPENDENTE",
+    "cnae": "4929-9/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRANSPORTADOR(A) INTERMUNICIPAL E INTERESTADUAL DE TRAVESSIA POR NAVEGAÇÃO FLUVIAL INDEPENDENTE",
+    "cnae": "5091-2/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRANSPORTADOR(A) MARÍTIMO DE CARGA INDEPENDENTE",
+    "cnae": "5011-4/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRANSPORTADOR(A) MUNICIPAL DE CARGAS NÃO PERIGOSAS (CARRETO) INDEPENDENTE",
+    "cnae": "4930-2/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRANSPORTADOR(A) MUNICIPAL COLETIVO DE PASSAGEIROS SOB FRETE INDEPENDENTE",
+    "cnae": "4929-9/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRANSPORTADOR(A) MUNICIPAL DE TRAVESSIA POR NAVEGAÇÃO INDEPENDENTE",
+    "cnae": "5091-2/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRANSPORTADOR(A) MUNICIPAL HIDROVIÁRIO DE CARGAS",
+    "cnae": "5021-1/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRICOTEIRO(A) INDEPENDENTE",
+    "cnae": "1422-3/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "VASSOUREIRO(A) INDEPENDENTE",
+    "cnae": "3291-4/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "VENDEDOR(A) AMBULANTE DE PRODUTOS ALIMENTÍCIOS",
+    "cnae": "5612-1/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "VENDEDOR(A) DE AVES VIVAS, COELHOS E OUTROS PEQUENOS ANIMAIS PARA ALIMENTAÇÃO INDEPENDENTE",
+    "cnae": "4724-5/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "VERDUREIRO INDEPENDENTE",
+    "cnae": "4724-5/00",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "VIDRACEIRO DE AUTOMÓVEIS INDEPENDENTE",
+    "cnae": "4520-0/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "VIDRACEIRO DE EDIFICAÇÕES INDEPENDENTE",
+    "cnae": "4330-4/99",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "VINAGREIRO INDEPENDENTE",
+    "cnae": "1099-6/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "VIVEIRISTA INDEPENDENTE",
+    "cnae": "0121-1/01",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRANSPORTADOR AUTÔNOMO DE CARGA - MUNICIPAL",
+    "cnae": "4930-2/01",
+    "iss": "S",
+    "icms": "N",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRANSPORTADOR AUTÔNOMO DE CARGA INTERMUNICIPAL, INTERESTADUAL E INTERNACIONAL",
+    "cnae": "4930-2/02",
+    "iss": "N",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRANSPORTADOR AUTÔNOMO DE CARGA - PRODUTOS",
+    "cnae": "4930-2/03",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  },
+  {
+    "occupation": "TRANSPORTADOR AUTÔNOMO DE CARGA - MUDANÇAS",
+    "cnae": "4930-2/04",
+    "iss": "S",
+    "icms": "S",
+    "source": "Anexo XI Resolução CGSN 140 (arquivo fornecido)"
+  }
+]
