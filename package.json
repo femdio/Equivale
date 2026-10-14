@@ -1,1 +1,1 @@
-{"name":"clt-pj-conversa","version":"0.1.0","private":true,"type":"module","scripts":{"start":"node server.js","test":"node --test"},"engines":{"node":">=20"}}
+{"name":"clt-pj-conversa","version":"0.1.0","private":true,"type":"module","scripts":{"start":"node server.js","test":"node --test"},"engines":{"node":">=20"},"dependencies":{"argon2":"^0.45.1","pg":"^8.23.1"}}
