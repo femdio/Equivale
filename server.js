@@ -4,6 +4,7 @@ import { resolve, extname, sep } from 'node:path';
 import { calculate } from './src/calculate.js';
 import { authRoute, requirePaidUser, saveSimulation, listSimulations } from './src/auth.js';
 import { paymentRoute } from './src/payments.js';
+import { validateRequestOrigin } from './src/security.js';
 
 const base=resolve('public');
 const types={'.json':'application/json; charset=utf-8','.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml'};
@@ -18,6 +19,12 @@ const server=http.createServer(async(req,res)=>{
   try{
     const url=new URL(req.url,'http://localhost');
     const path=url.pathname;
+// Proteção contra requisições de origens não autorizadas
+    if (!validateRequestOrigin(req)) {
+      return json(res, 403, {
+        error: 'Origem da requisição não autorizada'
+      });
+    }
     if(path.startsWith('/api/payments/')) return await paymentRoute(req,res,path,url);
     if(path.startsWith('/api/auth/')) return await authRoute(req,res,path);
     if(path==='/api/calculate' && req.method==='POST'){
@@ -42,9 +49,23 @@ const server=http.createServer(async(req,res)=>{
     try {decoded=decodeURIComponent(path);}catch{return json(res,400,{error:'URL inválida'});}
     const file=resolve(base,'.'+(decoded==='/'?'/index.html':decoded));
     if(file!==base&&!file.startsWith(base+sep))return json(res,403,{error:'Acesso negado'});
-    const content=await readFile(file);
-    res.writeHead(200,{'Content-Type':types[extname(file)]||'application/octet-stream','X-Content-Type-Options':'nosniff','Content-Security-Policy':"default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; frame-ancestors 'none'"});
-    res.end(content);
+    const content = await readFile(file);
+
+const headers = {
+  'Content-Type': types[extname(file)] || 'application/octet-stream',
+  'X-Content-Type-Options': 'nosniff',
+  'Content-Security-Policy':
+    "default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; frame-ancestors 'none'",
+  'Referrer-Policy': 'no-referrer'
+};
+
+// Impede o armazenamento em cache da página de ativação.
+if (path === '/definir-senha.html') {
+  headers['Cache-Control'] = 'no-store';
+}
+
+res.writeHead(200, headers);
+res.end(content);
   }catch(err){
     if(err.code==='ENOENT')return json(res,404,{error:'Não encontrado'});
     if(err.status)return json(res,err.status,{error:err.message});

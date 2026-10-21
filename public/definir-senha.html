@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Definir senha | Equivale</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .password-container {
+      max-width: 420px;
+      margin: 80px auto;
+      padding: 32px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px #00000012;
+    }
+    .password-container label {
+      display: block;
+      margin-top: 18px;
+      font-weight: 600;
+    }
+    .password-container input {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .password-container button {
+      width: 100%;
+      margin-top: 24px;
+      padding: 14px;
+      background: #116b5b;
+      color: white;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    #message { margin-top: 18px; }
+  </style>
+  <script src="/definir-senha.js" defer></script>
+</head>
+<body>
+  <main class="password-container">
+    <h1>equivale.</h1>
+    <h2>Definir sua senha</h2>
+    <p>Crie uma senha para acessar sua conta.</p>
+
+    <form id="password-form">
+      <label for="password">Nova senha</label>
+      <input id="password" type="password"
+             autocomplete="new-password"
+             minlength="12" maxlength="128" required>
+
+      <label for="confirm">Confirmar senha</label>
+      <input id="confirm" type="password"
+             autocomplete="new-password" required>
+
+      <button type="submit">Salvar senha</button>
+    </form>
+
+    <p id="message" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>

@@ -33,7 +33,7 @@ async function mp(path,opts={}) {
     return await res.json();
   }finally{clearTimeout(timer);}
 }
-function sigOk(req, id) {
+export function sigOk(req, id) {
   const secret=process.env.MP_WEBHOOK_SECRET;
   const signature=String(req.headers['x-signature']||'');
   const requestId=String(req.headers['x-request-id']||'');
@@ -67,6 +67,39 @@ async function createCheckout(req,res) {
   if(!url||new URL(url).protocol!=='https:')throw fail('URL de checkout não disponível para o ambiente configurado',502);
   return json(res,200,{checkoutUrl:url});
 }
+
+export function validateApprovedPayment(payment, order) {
+  if (!payment || !order) return false;
+
+  if (payment.status !== 'approved') return false;
+
+  if (payment.currency_id !== 'BRL') return false;
+
+  if (
+    !Number.isFinite(Number(payment.transaction_amount)) ||
+    Math.round(Number(payment.transaction_amount) * 100) !== 2990
+  ) return false;
+
+  if (String(payment.external_reference || '') !== String(order.id)) {
+    return false;
+  }
+
+  if (!order.provider_preference_id) return false;
+
+  if (
+    payment.preference_id != null &&
+    String(payment.preference_id) !==
+      String(order.provider_preference_id)
+  ) return false;
+
+  if (
+    order.provider_payment_id != null &&
+    String(order.provider_payment_id) !== String(payment.id)
+  ) return false;
+
+  return true;
+}
+
 async function webhook(req,res,url) {
   // Para payment, o Mercado Pago envia o ID no corpo ou em data.id no query.
   const payload=await body(req,32768);
@@ -75,8 +108,10 @@ async function webhook(req,res,url) {
   if(type!=='payment')return json(res,200,{ok:true});
   if(!sigOk(req,id))return json(res,401,{error:'Assinatura inválida'});
   const payment=await mp(`/v1/payments/${encodeURIComponent(String(id))}`);
-  if(payment.status!=='approved')return json(res,200,{ok:true});
-  if(payment.currency_id!=='BRL'||Math.round(Number(payment.transaction_amount)*100)!==PRICE_CENTS)return json(res,200,{ok:true});
+// Pagamentos não aprovados não liberam acesso.
+if (payment.status !== 'approved') {
+  return json(res, 200, { ok: true });
+}
   const orderId=String(payment.external_reference||'');
   if(!/^[0-9]{1,18}$/.test(orderId))return json(res,200,{ok:true});
   const client=await pool.connect();let activation=null;
@@ -84,10 +119,11 @@ async function webhook(req,res,url) {
     await client.query('BEGIN');
     const {rows:[order]}=await client.query(`SELECT p.id,p.status,p.provider_preference_id,p.provider_payment_id,u.id AS uid,u.email,u.full_name,u.password_hash
       FROM payments p JOIN users u ON u.id=p.user_id WHERE p.id=$1 FOR UPDATE OF p`,[orderId]);
-    if(!order||!order.provider_preference_id||(payment.preference_id&&String(payment.preference_id)!==order.provider_preference_id)||
-      (order.provider_payment_id&&order.provider_payment_id!==String(payment.id))) {
-      await client.query('ROLLBACK');return json(res,200,{ok:true});
-    }
+
+    if (!validateApprovedPayment(payment, order)) {
+  await client.query('ROLLBACK');
+  return json(res, 200, { ok: true });
+}
     if(order.status==='approved'){await client.query('COMMIT');return json(res,200,{ok:true});}
     await client.query('UPDATE payments SET provider_payment_id=$1,status=$2,updated_at=now() WHERE id=$3',[String(payment.id),'approved',orderId]);
     await client.query(`UPDATE users SET access_status='active',updated_at=now() WHERE id=$1`,[order.uid]);

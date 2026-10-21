@@ -2,6 +2,7 @@ import { createHash, randomBytes } from 'node:crypto';
 import argon2 from 'argon2';
 import pg from 'pg';
 import { sendPasswordLink } from './mail.js';
+import { loginRateLimit } from './rate-limit.js';
 
 let pool;
 function db() {
@@ -49,27 +50,71 @@ export async function authRoute(req,res,path) {
     // Não confirmar se a conta já existe; evitar enumeração de usuários.
     return json(res,202,{message:'Solicitação recebida. O acesso depende da confirmação do pagamento.'});
   }
-  if (path === '/api/auth/login' && req.method==='POST') {
-    const b=await input(req); const email=String(b.email||'').trim().toLowerCase(); const password=String(b.password||'');
-    if(email.length>254||password.length>1024) return json(res,401,{error:'Credenciais inválidas'});
-    const {rows}=await db().query('SELECT * FROM users WHERE lower(email)=$1',[email]);
-    const u=rows[0];
-    if(!u?.password_hash || !(await argon2.verify(u.password_hash,password))) return json(res,401,{error:'Credenciais inválidas'});
-    if(u.access_status!=='active') return json(res,403,{error:'Acesso ainda não liberado'});
-    await createSession(res,u.id);
-    return json(res,200,{user:publicUser(u)});
+
+if (path === '/api/auth/login' && req.method === 'POST') {
+  const b = await input(req);
+
+  const email = String(b.email || '').trim().toLowerCase();
+  const password = String(b.password || '');
+
+  if (email.length > 254 || password.length > 1024) {
+    return json(res, 401, { error: 'Credenciais inválidas' });
   }
+
+  // Limite inicial: 5 tentativas por conta a cada 15 minutos
+  const limit = loginRateLimit(req, email);
+
+  if (!limit.allowed) {
+    res.setHeader('Retry-After', String(limit.retryAfter));
+    return json(res, 429, {
+      error: 'Muitas tentativas. Tente novamente mais tarde.'
+    });
+  }
+
+  const { rows } = await db().query(
+    'SELECT * FROM users WHERE lower(email)=$1',
+    [email]
+  );
+
+  const u = rows[0];
+
+  if (!u?.password_hash ||
+      !(await argon2.verify(u.password_hash, password))) {
+    return json(res, 401, { error: 'Credenciais inválidas' });
+  }
+
+  if (u.access_status !== 'active') {
+    return json(res, 403, { error: 'Acesso ainda não liberado' });
+  }
+
+  await createSession(res, u.id);
+  return json(res, 200, { user: publicUser(u) });
+}
+
   if(path==='/api/auth/forgot-password' && req.method==='POST') {
     const b=await input(req);
     const email=String(b.email||'').trim().toLowerCase();
     if(email.length>254) return json(res,202,{message:'Se a conta estiver habilitada, enviaremos instruções por e-mail.'});
-    const {rows}=await db().query('SELECT id,full_name,email FROM users WHERE lower(email)=$1 AND access_status=\'active\' AND password_hash IS NOT NULL',[email]);
+    const { rows } = await db().query(
+  `SELECT id, full_name, email, password_hash
+   FROM users
+   WHERE lower(email) = $1
+   AND access_status = 'active'`,
+  [email]
+);
     const user=rows[0];
     if(user) {
       const token=randomBytes(32).toString('hex');
       const hash=digest(token);
       await db().query(`INSERT INTO password_reset_tokens(user_id,token_hash,expires_at) VALUES($1,$2,now()+interval '30 minutes')`,[user.id,hash]);
-      try {await sendPasswordLink({to:user.email,name:user.full_name,token});}
+      try {
+  await sendPasswordLink({
+    to: user.email,
+    name: user.full_name,
+    token,
+    kind: user.password_hash ? 'reset' : 'activation'
+  });
+}
       catch(err){ console.error('Falha no envio da recuperação de senha:',err.message); }
     }
     return json(res,202,{message:'Se a conta estiver habilitada, enviaremos instruções por e-mail.'});

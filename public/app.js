@@ -45,7 +45,45 @@ function resolvedMei(){
 function regime(){return resolvedMei()?'mei':'pj'}
 function selectedCnae(){return CNAE_REFERENCE.find(a=>a.cnae===state.cnaeActivity)}
 async function review(){let mei=regime()==='mei';if(mei){try{mei=(await findMin('mei')).possible}catch{mei=false}}const common=[['salary','Salário CLT'],['extra','Pagamentos extras'],['food','Alimentação'],['transport','Transporte'],['health','Plano de saúde'],['otherBenefits','Outros benefícios'],['otherDiscounts','Outros descontos'],['dependents','Dependentes']];const pj=[['accountant','Gastos burocráticos (estimativa: serviços contábeis e certificado digital)*'],['expenses','Outras despesas PJ']];$('#work').innerHTML=`<span class="pill">SEUS DADOS</span><h2>Revise seus valores</h2><div class="panel"><h3>CLT</h3><div class="grid">${common.map(x=>field(...x)).join('')}</div><h3>Pagamento extra</h3>${[['extraTax','Incide INSS/IR'],['extraFgts','Incide FGTS'],['extraThirteenth','Conta para 13º'],['extraHoliday','Conta para férias']].map(([k,l])=>`<label class="check"><input data-check="${k}" type="checkbox" ${state[k]?'checked':''}> ${l}</label>`).join('')}<div class="divider"></div><h3>Atividade: ${esc(job()?.name||'não identificada')}</h3><p class="fine">${mei?'Correspondência única com ocupação MEI encontrada. Confirme que a atividade exercida corresponde à descrição legal.':'Enquadramento não confirmado automaticamente. A simulação do Simples é preliminar e requer confirmação da atividade efetivamente exercida.'}</p><button class="button secondary" id="jobEdit">Alterar profissão</button><div class="divider"></div><h3>${mei?'Custos MEI':'Custos e premissas PJ'}</h3><div class="grid">${mei?field('meiDAS','Custo mensal estimado MEI (DAS)'):pj.map(x=>field(...x)).join('')}</div><p class="fine">${mei?'* R$ 87,00 é uma estimativa mensal do DAS MEI, editável. Depende do ano, atividade e componentes de ISS/ICMS. Este modelo simplificado não acrescenta pró-labore nem INSS sobre pró-labore; a contribuição previdenciária básica está no DAS.':'* R$ 452,00 é uma estimativa de serviços contábeis e certificado digital, editável. Pró-labore estimado automaticamente como 28% do faturamento; INSS estimado em 11% sobre pró-labore, respeitando o teto. A regra dos 28% é premissa do simulador, não obrigação geral.'}</p><p class="fine">O modelo MEI simplificado não inclui contador, despesas PJ ou pró-labore. Isso não significa que todo MEI esteja dispensado de todos esses custos na prática.</p><div class="actions"><button class="button" id="recalc">Salvar e calcular →</button></div></div>`;$('#jobEdit').onclick=()=>{save();step=questions.findIndex(q=>q[0]==='job');go('chat')};$('#recalc').onclick=()=>{save();go('results')}}
-async function calc(offer,annex='III'){let r=await fetch('/api/calculate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...state,offer,annex,meiEligibility:resolvedMei()?'yes':'no',rbt12:offer*12,payroll12:offer*.28*12})});if(!r.ok)throw Error('Falha no cálculo');return r.json()}
+
+async function calc(offer, annex = 'III') {
+  const r = await fetch('/api/calculate', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    credentials: 'same-origin',
+    body: JSON.stringify({
+      ...state,
+      offer,
+      annex,
+      meiEligibility: resolvedMei() ? 'yes' : 'no',
+      rbt12: offer * 12,
+      payroll12: offer * 0.28 * 12
+    })
+  });
+
+  if (r.status === 401) {
+    throw new Error(
+      'Sua sessão expirou. Entre novamente na sua conta.'
+    );
+  }
+
+  if (r.status === 403) {
+    throw new Error(
+      'É necessário ter acesso ativo para realizar simulações.'
+    );
+  }
+
+  if (!r.ok) {
+    throw new Error(
+      'Não foi possível realizar o cálculo. Tente novamente.'
+    );
+  }
+
+  return r.json();
+}
+
 async function findMin(type){let lo=0,hi=type==='mei'?6750:50000;let target=(await calc(0)).clt.monthlySpreadsheetNet;for(let i=0;i<21;i++){let mid=(hi+lo)/2,r=await calc(mid,type==='mei'?'III':type);const net=type==='mei'?r.mei.net:r.pj.netPJ;if(net!==null&&net>=target)hi=mid;else lo=mid}let test=await calc(hi,type==='mei'?'III':type);return {value:hi,possible:type==='mei'?test.mei.status==='possivel'&&test.mei.net>=target-.1:test.pj.netPJ!==null&&test.pj.netPJ>=target-.1}}
 async function results(){const el=$('#work');el.innerHTML=`<span class="pill">SIMULAÇÃO</span><h2>Seu equivalente PJ</h2><div class="panel" id="resultBox">Calculando...</div>`;try{const j=job(),r=await calc(0),type=regime(),suggested=selectedCnae()?.annex||(['III','V'].includes(j?.annex)?j.annex:'III');let scenarios=type==='mei'?await Promise.all([findMin('mei'),findMin(suggested)]):await Promise.all([findMin(suggested),findMin(suggested==='III'?'V':'III')]);let selected=type==='mei'&&scenarios[0].possible?'MEI':'Simples (cenário preliminar)';let baseMin=type==='mei'&&scenarios[0].possible?scenarios[0].value:type==='mei'?scenarios[1].value:scenarios[0].value;scenario=baseMin;computed={clt:r.clt,selected,minimum:baseMin,warning:!j||j.annex==='factor'||j.annex==='IV'||j.annex==='unknown'};
 let info=type==='mei'?(scenarios[0].possible?`Ocupação MEI selecionada do Anexo XI e faturamento projetado até ${fmt(81000)} ao ano.`:`Esta ocupação consta na lista MEI, mas o mínimo necessário ultrapassa o limite de ${fmt(81000)} anuais. Exibimos uma hipótese de Simples que exige confirmação.`):`Não foi selecionada uma atividade permitida ao MEI no Anexo XI. ${j?.annex==='factor'?'O anexo depende do fator R e do CNAE.':j?.annex==='IV'?'Atividades do Anexo IV exigem cálculo adicional de contribuição patronal, ainda não implementado.':'Profissão encontrada, mas o CNAE e o anexo ainda não foram validados. A simulação usa o Anexo III somente como cenário ilustrativo, não como enquadramento confirmado.'}`;
