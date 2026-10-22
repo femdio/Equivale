@@ -2,17 +2,39 @@ import nodemailer from 'nodemailer';
 
 let transport;
 function settings() {
-  const {SMTP_HOST, SMTP_PORT='465', SMTP_USER, SMTP_PASS, SMTP_FROM} = process.env;
-  if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS || !SMTP_FROM) throw new Error('SMTP não configurado');
-  return {SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, SMTP_FROM};
+  const {
+    SMTP_HOST,
+    SMTP_PORT = '465',
+    SMTP_USER,
+    SMTP_PASS,
+    SMTP_FROM
+  } = process.env;
+
+  if (!SMTP_HOST || !SMTP_FROM) {
+    throw new Error('SMTP não configurado');
+  }
+
+  // Permitir SMTP sem autenticação somente para o Mailpit local
+  const isLocalMailpit =
+    SMTP_HOST === '127.0.0.1' &&
+    Number(SMTP_PORT) === 1025;
+
+  if ((!SMTP_USER || !SMTP_PASS) && !isLocalMailpit) {
+    throw new Error('Autenticação SMTP obrigatória');
+  }
+
+  return { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, SMTP_FROM };
 }
+
 function mailer() {
   if (!transport) {
     const s=settings();
     transport=nodemailer.createTransport({
       host:s.SMTP_HOST, port:Number(s.SMTP_PORT),
       secure:Number(s.SMTP_PORT)===465,
-      auth:{user:s.SMTP_USER,pass:s.SMTP_PASS},
+      ...(s.SMTP_USER && s.SMTP_PASS
+  ? { auth: { user: s.SMTP_USER, pass: s.SMTP_PASS } }
+  : {}),
       connectionTimeout:10000, greetingTimeout:10000, socketTimeout:15000
     });
   }
