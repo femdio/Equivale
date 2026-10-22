@@ -1,5 +1,5 @@
 
-const APP_ORIGIN = 'https://equivalepj.femdio.com.br';
+const APP_ORIGIN = (new URL(process.env.APP_BASE_URL || 'https://equivalepj.femdio.com.br').origin);
 
 export function validateRequestOrigin(req) {
   const method = req.method || 'GET';
