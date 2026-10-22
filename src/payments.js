@@ -40,8 +40,11 @@ export function sigOk(req, id) {
   if(!secret||!requestId||!signature||!/^[0-9]+$/.test(String(id)))return false;
   const kv=Object.fromEntries(signature.split(',').map(x=>x.trim().split(/=(.*)/s).slice(0,2)));
   if(!kv.ts||!/^[a-f0-9]{64}$/i.test(kv.v1||''))return false;
-  const ts=Number(kv.ts);
-  if(!Number.isFinite(ts)||Math.abs(Date.now()-ts)>5*60*1000)return false;
+  const ts = Number(kv.ts);
+if (!Number.isFinite(ts)) return false;
+
+const timestampMs = ts < 1e11 ? ts * 1000 : ts;
+if (Math.abs(Date.now() - timestampMs) > 5 * 60 * 1000) return false;
   const manifest=`id:${String(id).toLowerCase()};request-id:${requestId};ts:${kv.ts};`;
   const expected=createHmac('sha256',secret).update(manifest).digest('hex');
   return timingSafeEqual(Buffer.from(expected,'hex'),Buffer.from(kv.v1,'hex'));
