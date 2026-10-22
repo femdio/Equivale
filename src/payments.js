@@ -28,7 +28,9 @@ function token(){const t=process.env.MP_ACCESS_TOKEN;if(!t)throw fail('Mercado P
 async function mp(path,opts={}) {
   const ac=new AbortController(); const timer=setTimeout(()=>ac.abort(),12000);
   try {
-    const res=await fetch(`${API}${path}`,{...opts,headers:{Authorization:`Bearer ${token()}`,'Content-Type':'application/json',...(opts.headers||{})},signal:ac.signal});
+    const {allowNotFound=false,...fetchOptions}=opts;
+    const res=await fetch(`${API}${path}`,{...fetchOptions,headers:{Authorization:`Bearer ${token()}`,'Content-Type':'application/json',...(fetchOptions.headers||{})},signal:ac.signal});
+    if(res.status===404 && opts.allowNotFound===true)return null;
     if(!res.ok)throw fail(`Falha na comunicação com Mercado Pago (${res.status})`,502);
     return await res.json();
   }finally{clearTimeout(timer);}
@@ -110,7 +112,8 @@ async function webhook(req,res,url) {
   const type=payload?.type??url.searchParams.get('type');
   if(type!=='payment')return json(res,200,{ok:true});
   if(!sigOk(req,id))return json(res,401,{error:'Assinatura inválida'});
-  const payment=await mp(`/v1/payments/${encodeURIComponent(String(id))}`);
+  const payment=await mp(`/v1/payments/${encodeURIComponent(String(id))}`,{allowNotFound:true});
+  if(!payment)return json(res,200,{ok:true,ignored:'payment_not_found'});
 // Pagamentos não aprovados não liberam acesso.
 if (payment.status !== 'approved') {
   return json(res, 200, { ok: true });
