@@ -54,7 +54,7 @@ export function checkRateLimit(key, options = {}) {
   };
 }
 
-export function loginRateLimit(req, email) {
+export function loginRateLimit(req, email, operation = 'login') {
   // Node.js recebe a conexão diretamente do Nginx local.
   // O X-Forwarded-For só deve ser aceito quando o proxy
   // é confiável e controlado pela aplicação.
@@ -83,18 +83,18 @@ if (isIP(ip) === 0) {
   ip = 'unknown';
 }
 
-  const ipLimit = checkRateLimit(`login-ip:${ip}`, {
-    limit: 20,
-    windowMs: 15 * 60 * 1000
-  });
+  const ipLimit = checkRateLimit(`${operation}-ip:${ip}`, {
+  limit: 20,
+  windowMs: 15 * 60 * 1000
+});
 
   const accountLimit = checkRateLimit(
-    `login-account:${email}`,
-    {
-      limit: 5,
-      windowMs: 15 * 60 * 1000
-    }
-  );
+  `${operation}-account:${email}`,
+  {
+    limit: 5,
+    windowMs: 15 * 60 * 1000
+  }
+);
 
   if (!ipLimit.allowed || !accountLimit.allowed) {
     return {

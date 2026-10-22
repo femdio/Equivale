@@ -45,7 +45,8 @@ async function createSession(res,userId) {
 export async function authRoute(req,res,path) {
   if (path === '/api/auth/register' && req.method==='POST') {
     const b=await input(req); const name=String(b.name||'').trim(); const email=String(b.email||'').trim().toLowerCase();
-    if (name.length<2||name.length>200||!/^\S+@\S+\.\S+$/.test(email)||email.length>254) return json(res,400,{error:'Nome ou e-mail inválido'});
+  
+  if (name.length<2||name.length>200||!/^\S+@\S+\.\S+$/.test(email)||email.length>254) return json(res,400,{error:'Nome ou e-mail inválido'});
     const {rows}=await db().query(`INSERT INTO users(full_name,email) VALUES($1,$2) ON CONFLICT DO NOTHING RETURNING id`,[name,email]);
     // Não confirmar se a conta já existe; evitar enumeração de usuários.
     return json(res,202,{message:'Solicitação recebida. O acesso depende da confirmação do pagamento.'});
@@ -92,9 +93,23 @@ if (path === '/api/auth/login' && req.method === 'POST') {
 }
 
   if(path==='/api/auth/forgot-password' && req.method==='POST') {
-    const b=await input(req);
-    const email=String(b.email||'').trim().toLowerCase();
-    if(email.length>254) return json(res,202,{message:'Se a conta estiver habilitada, enviaremos instruções por e-mail.'});
+  const b = await input(req);
+  const email = String(b.email || '').trim().toLowerCase();
+
+  // Limite independente para recuperação de senha
+  const limit = loginRateLimit(req, email, 'recovery');
+
+  if (!limit.allowed) {
+    res.setHeader('Retry-After', String(limit.retryAfter));
+    return json(res, 429, {
+      error: 'Muitas solicitações. Tente novamente mais tarde.'
+    });
+  }
+
+  if(email.length>254)
+    return json(res,202,{
+      message:'Se a conta estiver habilitada, enviaremos instruções por e-mail.'
+    });
     const { rows } = await db().query(
   `SELECT id, full_name, email, password_hash
    FROM users

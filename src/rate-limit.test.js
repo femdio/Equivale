@@ -1,8 +1,8 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { checkRateLimit } from './rate-limit.js';
-import { loginRateLimit } from './rate-limit.js';
+import { checkRateLimit, loginRateLimit } from './rate-limit.js';
+
 
 test('permite requisições dentro do limite', () => {
   const key = 'teste-permitido-' + Date.now();
@@ -111,5 +111,25 @@ test('ignora X-Real-IP inválido recebido do proxy local', () => {
     loginRateLimit(req, 'usuario-proxy-final@example.com').allowed,
     false
   );
+});
+
+test('login e recuperação possuem limites independentes', () => {
+  const req = {
+    socket: { remoteAddress: '198.51.100.77' },
+    headers: {}
+  };
+
+  const email = 'teste-operacoes@example.com';
+
+  // Consome as cinco tentativas de login
+  for (let i = 0; i < 5; i++) {
+    assert.equal(loginRateLimit(req, email, 'login').allowed, true);
+  }
+
+  // Sexta tentativa de login deve ser bloqueada
+  assert.equal(loginRateLimit(req, email, 'login').allowed, false);
+
+  // Recuperação de senha continua disponível
+  assert.equal(loginRateLimit(req, email, 'recovery').allowed, true);
 });
 
