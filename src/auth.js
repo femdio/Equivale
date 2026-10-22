@@ -138,7 +138,7 @@ if (path === '/api/auth/login' && req.method === 'POST') {
     const b=await input(req);
     const token=String(b.token||'');
     const password=String(b.password||'');
-    if(!/^[a-f0-9]{64}$/.test(token) || password.length<12 || password.length>128) return json(res,400,{error:'Link inválido ou senha fora dos limites (12 a 128 caracteres).'});
+    if(!/^[a-f0-9]{64}$/.test(token) || password.length<8 || password.length>32) return json(res,400,{error:'Link inválido ou senha fora dos limites (8 a 32 caracteres).'});
     const client=await db().connect();
     try {
       await client.query('BEGIN');

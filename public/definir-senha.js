@@ -25,8 +25,8 @@ form.addEventListener('submit', async event => {
     return;
   }
 
-  if (password.length < 12 || password.length > 128) {
-    message.textContent = 'A senha deve ter entre 12 e 128 caracteres.';
+  if (password.length < 8 || password.length > 32) {
+    message.textContent = 'A senha deve ter entre 8 e 32 caracteres.';
     return;
   }
 
@@ -50,10 +50,28 @@ form.addEventListener('submit', async event => {
 
     form.hidden = true;
     message.textContent =
-      'Senha definida com sucesso! Você já pode acessar sua conta.';
+      'Senha definida! Redirecionando para o login...';
+    window.location.replace('/?login=1');
   } catch {
     message.textContent = 'Erro de conexão. Tente novamente.';
   } finally {
     button.disabled = false;
   }
 });
+
+for (const id of ['password', 'confirm']) {
+  const input = document.getElementById(id);
+  if (!input) continue;
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.textContent = 'Mostrar senha';
+  button.style.margin = '6px';
+  button.style.width = 'auto';
+  button.style.padding = '7px 10px';
+  input.insertAdjacentElement('afterend', button);
+  button.addEventListener('click', () => {
+    const visible = input.type === 'password';
+    input.type = visible ? 'text' : 'password';
+    button.textContent = visible ? 'Ocultar senha' : 'Mostrar senha';
+  });
+}

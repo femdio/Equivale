@@ -16,7 +16,72 @@ const questions=[['salary','Qual é seu salário bruto na carteira?','money'],['
 function job(){return JOBS.find(j=>j.id===state.job)}
 async function loadOccupations(){try{const r=await fetch('/api/occupations');const data=await r.json();if(data.official){JOBS=data.jobs.sort((a,b)=>a.name.localeCompare(b.name,'pt-BR'));}}catch{}}
 loadOccupations();
-function layout(content){app.innerHTML=`<header class="top"><div class="brand">equivale<span>.</span></div><div class="nav"><button class="button ghost" data-go="home">Início</button><button class="button secondary" data-go="login">Entrar</button><button class="button ghost" data-go="dashboard">Minha conta</button></div></header>${content}<footer class="footer">Equivale • Simulações informativas sujeitas à conferência contábil • Pagamento pelo Mercado Pago</footer>`;document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go))}
+
+
+let equivaleUsuarioAtual=null;
+
+
+let usuarioCabecalho = null;
+
+async function atualizarCabecalhoUsuario(){
+  try {
+    const r = await fetch('/api/auth/me', {
+      credentials: 'same-origin',
+      cache: 'no-store'
+    });
+
+    if (!r.ok) {
+      usuarioCabecalho = null;
+      return;
+    }
+
+    const data = await r.json();
+    usuarioCabecalho = data.user || null;
+
+    atualizarNomeCabecalho();
+  } catch (error) {
+    console.warn('Falha ao consultar usuário.');
+  }
+}
+
+function atualizarNomeCabecalho(){
+  const button = document.querySelector('[data-go="dashboard"]');
+  if (!button) return;
+
+  button.querySelector('.equivale-user-name')?.remove();
+
+  if (!usuarioCabecalho?.name) return;
+
+  const span = document.createElement('span');
+  span.className = 'equivale-user-name';
+  span.textContent = usuarioCabecalho.name;
+  span.title = usuarioCabecalho.name;
+
+  button.appendChild(span);
+}
+
+function layout(content){app.innerHTML=`<header class="top"><div class="brand">equivale<span>.</span></div><div class="nav"><button class="button ghost" data-go="home">Início</button><button class="button ${page==='login'?'secondary':'ghost'}" data-go="login">Entrar</button><button class="button ${page==='dashboard'?'secondary':'ghost'}" data-go="dashboard">Minha conta</button></div></header>${content}<footer class="footer">Equivale • Simulações informativas sujeitas à conferência contábil • Pagamento pelo Mercado Pago</footer>`;document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));atualizarNomeCabecalho();atualizarCabecalhoUsuario()}
+
+window.equivaleOpenSimulation = function(record) {
+  const input = record?.input_data;
+  if (!input || typeof input !== 'object' || Array.isArray(input)) {
+    alert('Esta simulação não possui dados recuperáveis.');
+    return;
+  }
+
+  for (const key of Object.keys(state)) {
+    if (Object.prototype.hasOwnProperty.call(input, key)) {
+      state[key] = input[key];
+    }
+  }
+
+  scenario = Number(input.offer) || 0;
+  step = 0;
+  computed = null;
+  proposalTouched = false;
+  go('review');
+};
+
 function go(name){page=name;render();window.scrollTo(0,0)}
 function shell(){layout(`<div class="shell layout"><aside class="side"><button data-tab="chat">💬 Comece aqui</button><button data-tab="review">✏️ Meus dados</button><button data-tab="results">📈 Simulação</button><button data-tab="proposal">📄 Proposta</button></aside><main class="main" id="work"></main></div>`);document.querySelectorAll('[data-tab]').forEach(b=>{b.classList.toggle('active',b.dataset.tab===page);b.onclick=()=>go(b.dataset.tab)})}
 function render(){if(page==='home'){layout(`<main class="shell"><section class="hero"><div><span class="pill">SEU TRABALHO TEM VALOR</span><h1>Descubra quanto pedir para trabalhar como PJ.</h1><p class="lede">Conte quanto recebe na CLT e deixe o Equivale calcular os cenários.</p><button class="button" id="start">Pronto para começar? →</button><p class="muted">Relatório completo: R$ 29,90 • pagamento seguro pelo Mercado Pago</p></div><div class="video"><span class="play">▶</span><h3>Seu vídeo de apresentação</h3><small>Espaço reservado para o vídeo de vocês</small></div></section></main>`);$('#start').onclick=()=>go('checkout');return}
@@ -95,7 +160,35 @@ const employerSameMonthly=r.clt.annualEmployerReference/12;
  const minNet=isMeiMin?employeeSame.mei.net*12:employeeSame.pj.netPJ*12;
  computed.employerSame=employerSameMonthly;
  $('#resultBox').innerHTML=`<p class="fine">Comparação de um ano inteiro • contrato PJ com 12 pagamentos mensais, sem 13º separado</p><div class="metrics"><div class="metric"><small>Referência econômica CLT anual (método da planilha)</small><strong>${fmt(r.clt.annualSpreadsheetNet)}</strong></div><div class="metric"><small>Referência anual de desembolso da empresa*</small><strong>${fmt(r.clt.annualEmployerReference)}</strong></div></div><div class="divider"></div><h3>Regime simulado: ${selected} <button class="helpBtn" id="help">?</button></h3><div class="banner">${info}</div><div class="grid"><div class="metric"><small>Cenário 1 • mesmo desembolso mensal da empresa*</small><strong>${fmt(employerSameMonthly)}</strong><p class="fine">Resultado PJ estimado no ano: ${sameEmployerNet===null?'não calculado':fmt(sameEmployerNet)}. Diferença frente à CLT: ${sameEmployerNet===null?'—':fmt(sameEmployerNet-r.clt.annualSpreadsheetNet)}.</p></div><div class="metric"><small>Cenário 2 • equivalência anual para o trabalhador</small><strong>${fmt(baseMin)}</strong><p class="fine">Resultado PJ anual estimado: ${fmt(minNet)}. Dividido em 12 parcelas mensais.</p></div></div><p class="fine">* O desembolso da empresa é uma referência baseada nas rubricas da planilha, não o custo trabalhista integral comprovado. O modelo CLT deste protótipo replica as premissas do Excel e ainda precisa de conferência de incidências e tributação (inclusive 13º e férias). O pró-labore é informativo, não despesa subtraída duas vezes.</p><p class="fine">Para Simples: pró-labore estimado em 28% do faturamento, INSS de 11% sobre pró-labore até o teto, além do DAS e dos gastos burocráticos de ${fmt(state.accountant)} mensais. Enquadramento tributário ainda preliminar.</p><div class="field"><label>Simular faturamento PJ mensal</label><input id="scenario" value="${baseMin.toFixed(2).replace('.',',')}" inputmode="decimal"></div><div class="actions"><button class="button secondary" id="simulate">Recalcular</button><button class="button" id="proposal">Preparar proposta →</button></div><div id="scenarioOutput" class="banner"></div>`;
-$('#help').onclick=()=>toggleTaxHelp();$('#simulate').onclick=async()=>{scenario=Math.max(0,parse($('#scenario').value));let z=await calc(scenario,suggested);let meiNow=type==='mei'&&z.mei.status==='possivel';let cash=meiNow?z.mei.net:z.pj.netPJ;$('#scenarioOutput').textContent=`Faturamento ${fmt(scenario)} / mês; cenário ${meiNow?'MEI':'Simples'}: saldo estimado ${cash===null?'não calculável':fmt(cash)} / mês. ${type==='mei'&&!meiNow?'O MEI não comporta esta simulação.':''}`;computed.selected=meiNow?'MEI':'Simples';};$('#proposal').onclick=()=>{scenario=Math.max(0,parse($('#scenario').value));go('proposal')};}catch(e){$('#resultBox').textContent='Não foi possível calcular: '+e.message}}
+$('#help').onclick=()=>toggleTaxHelp();$('#simulate').onclick=async()=>{scenario=Math.max(0,parse($('#scenario').value));let z=await calc(scenario,suggested);let meiNow=type==='mei'&&z.mei.status==='possivel';let cash=meiNow?z.mei.net:z.pj.netPJ;$('#scenarioOutput').textContent=`Faturamento ${fmt(scenario)} / mês; cenário ${meiNow?'MEI':'Simples'}: saldo estimado ${cash===null?'não calculável':fmt(cash)} / mês. ${type==='mei'&&!meiNow?'O MEI não comporta esta simulação.':''}`;computed.selected=meiNow?'MEI':'Simples';};$('#proposal').onclick=async()=>{
+      scenario=Math.max(0,parse($('#scenario').value));
+      if(scenario<=0){alert('Informe um valor PJ válido.');return;}
+      const annex=selectedCnae()?.annex ||
+        (['I','II','III','IV','V'].includes(job()?.annex)?job().annex:'III');
+      const payload={
+        ...state,offer:scenario,annex,
+        meiEligibility:resolvedMei()?'yes':'no',
+        rbt12:scenario*12,
+        payroll12:scenario*0.28*12
+      };
+      const key=JSON.stringify(payload);
+      if(window.equivaleUltimaProposta!==key){
+        try{
+          const response=await fetch('/api/simulations/save',{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            credentials:'same-origin',
+            body:JSON.stringify(payload)
+          });
+          if(!response.ok)throw Error('Não foi possível salvar a simulação.');
+          window.equivaleUltimaProposta=key;
+        }catch(error){
+          alert(error.message);
+          return;
+        }
+      }
+      go('proposal');
+    };}catch(e){$('#resultBox').textContent='Não foi possível calcular: '+e.message}}
 function toggleTaxHelp(){const previous=$('#taxPopover');if(previous){previous.remove();return;}const btn=$('#help');if(!btn)return;const panel=document.createElement('div');panel.id='taxPopover';panel.className='tax-popover';panel.innerHTML=`<button type="button" id="closeTax" aria-label="Fechar informação">×</button><strong>O que significa o regime?</strong><p><b>MEI:</b> depende da ocupação permitida e do limite de faturamento.</p><p><b>Simples Nacional:</b> usa anexos diferentes conforme a atividade empresarial. Comércio: I; indústria: II; serviços: III, IV ou V.</p><p><b>Fator R:</b> certas atividades podem mudar de anexo conforme relação entre folha e receita.</p><p>A profissão CBO não define sozinha o CNAE nem garante a tributação. Quando não houver correspondência validada, o valor é ilustrativo.</p>`;btn.closest('h3').insertAdjacentElement('afterend',panel);$('#closeTax').onclick=()=>panel.remove();}
 function printCleanProposal(){
  const table=document.querySelector('#compare table');
@@ -110,7 +203,36 @@ function printCleanProposal(){
 
 function draft(){return `À empresa contratante,\n\nEu, ${state.firstName} ${state.lastName}, apresento uma proposta de prestação de serviços de ${job()?.name||'atividade profissional'}.\n\nValor de faturamento mensal proposto: ${fmt(scenario)}.\n\nO valor foi estimado com base em minha remuneração CLT e benefícios atuais, com premissas de tributação ainda sujeitas a confirmação.\n\nPeço que sejam negociados escopo, autonomia, entregas, reembolsos, reajustes, prazos e encerramento.\n\nPontos de atenção: exclusividade, subordinação, habitualidade e pessoalidade podem indicar risco de vínculo empregatício. A atividade declarada ao fisco precisa corresponder à atividade real.\n\nAtenciosamente,\n${state.firstName} ${state.lastName}`}
 const row=(label,cltM,cltA,pjM,pjA,cls='')=>`<tr class="${cls}"><td>${esc(label)}</td><td>${cltM===null?'':fmt(cltM)}</td><td>${cltA===null?'':fmt(cltA)}</td><td>${pjM===null?'':fmt(pjM)}</td><td>${pjA===null?'':fmt(pjA)}</td></tr>`;
-async function proposal(){const el=$('#work');el.innerHTML=`<span class="pill">PROPOSTA</span><h2>Prepare sua negociação</h2><p class="muted">Edite o texto e revise os cálculos detalhados abaixo.</p><div class="panel proposal-panel"><label for="draft">Texto da proposta</label><textarea id="draft" rows="13"></textarea><div id="draftPrint" class="print-draft" aria-hidden="true"></div><h3>Comparativo CLT x PJ</h3><div class="table-scroll" id="compare">Calculando...</div><p class="fine">Valores estimados, não validados para decisões contratuais. Itens anuais aparecem mensalizados apenas para comparação. FGTS não é remuneração disponível; bônus informais podem envolver diferenças legais.</p><div class="actions"><button class="button secondary" id="edit">Editar meus dados</button><button class="button" id="print">Imprimir / PDF</button></div></div>`;$('#draft').value=proposalTouched?proposalDraft:draft();const syncPrintDraft=()=>{$('#draftPrint').textContent=$('#draft').value};syncPrintDraft();$('#draft').oninput=()=>{proposalTouched=true;proposalDraft=$('#draft').value;syncPrintDraft()};$('#edit').onclick=()=>{proposalDraft=$('#draft').value;go('review')};$('#print').onclick=()=>{syncPrintDraft();printCleanProposal()};try{
+async function proposal(){const el=$('#work');el.innerHTML=`<span class="pill">PROPOSTA</span><h2>Prepare sua negociação</h2><p class="muted">Edite o texto e revise os cálculos detalhados abaixo.</p><div class="panel proposal-panel"><label for="draft">Texto da proposta</label><textarea id="draft" rows="13"></textarea><div id="draftPrint" class="print-draft" aria-hidden="true"></div><h3>Comparativo CLT x PJ</h3><div class="table-scroll" id="compare">Calculando...</div><p class="fine">Valores estimados, não validados para decisões contratuais. Itens anuais aparecem mensalizados apenas para comparação. FGTS não é remuneração disponível; bônus informais podem envolver diferenças legais.</p><div class="actions"><button class="button secondary" id="edit">Editar meus dados</button><button class="button" id="print">Imprimir / PDF</button><button class="button secondary" id="downloadPdf">Salvar proposta em PDF</button></div></div>`;$('#draft').value=proposalTouched?proposalDraft:draft();const syncPrintDraft=()=>{$('#draftPrint').textContent=$('#draft').value};syncPrintDraft();$('#draft').oninput=()=>{proposalTouched=true;proposalDraft=$('#draft').value;syncPrintDraft()};$('#edit').onclick=()=>{proposalDraft=$('#draft').value;go('review')};$('#print').onclick=()=>{syncPrintDraft();printCleanProposal()};$('#downloadPdf').onclick=async()=>{
+  const button=$('#downloadPdf');
+  button.disabled=true;
+  try{
+    const annex=selectedCnae()?.annex ||
+      (['I','II','III','IV','V'].includes(job()?.annex)
+        ?job().annex:'III');
+    const r=await fetch('/api/report',{
+      method:'POST',
+      credentials:'same-origin',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        ...state,
+        offer:scenario,
+        annex,
+        meiEligibility:resolvedMei()?'yes':'no',
+        rbt12:scenario*12
+      })
+    });
+    if(!r.ok)throw Error('Nao foi possivel gerar o PDF.');
+    const blob=await r.blob();
+    const url=URL.createObjectURL(blob);
+    const link=document.createElement('a');
+    link.href=url;
+    link.download='equivale-relatorio.pdf';
+    link.click();
+    setTimeout(()=>URL.revokeObjectURL(url),30000);
+  }catch(e){alert(e.message);}
+  finally{button.disabled=false;}
+};try{
  const annex=(['I','II','III','IV','V'].includes(job()?.annex)?job().annex:'III');
  const r=await calc(scenario,annex),c=r.clt;
  const employerValue=c.annualEmployerReference/12;
@@ -144,4 +266,40 @@ async function proposal(){const el=$('#work');el.innerHTML=`<span class="pill">P
  $('#compare').innerHTML=`<table class="comparison detailed"><thead><tr><th rowspan="2">Descrição</th><th colspan="2" class="clt-head">CLT</th><th colspan="2" class="pj-head">PJ • mesmo custo*</th><th colspan="2" class="pj-head">PJ • equivalente</th></tr><tr><th class="clt-head">Mensal</th><th class="clt-head">Anual</th><th class="pj-head">Mensal</th><th class="pj-head">Anual</th><th class="pj-head">Mensal</th><th class="pj-head">Anual</th></tr></thead><tbody>${rows}<tr class="total-row total-month"><td>TOTAL MENSAL</td><td>${fmt(cltMonthlyTotal)}</td><td></td><td>${oldNet===null?'—':fmt(oldNet)}</td><td></td><td>${newNet===null?'—':fmt(newNet)}</td><td></td></tr><tr class="total-row total-annual"><td>TOTAL ANUAL</td><td></td><td>${fmt(c.annualSpreadsheetNet)}</td><td></td><td>${oldAnnual===null?'—':fmt(oldAnnual)}</td><td></td><td>${newAnnual===null?'—':fmt(newAnnual)}</td></tr><tr class="delta-row"><td>Diferença frente à CLT</td><td></td><td></td><td></td><td>${oldAnnual===null?'—':fmt(oldAnnual-c.annualSpreadsheetNet)}</td><td></td><td>${newAnnual===null?'—':fmt(newAnnual-c.annualSpreadsheetNet)}</td></tr></tbody></table><p class="fine">* Mesmo custo: aproximação do desembolso anual a partir das rubricas do Excel. O comparativo segue provisões brutas de férias e 13º e descontos mensais anualizados, sujeitos a validação contábil. FGTS não é dinheiro líquido disponível e pode ter incidências diferentes na prática.</p>`;
  }catch(e){$('#compare').textContent=e.message}}
 function help(){$('#work').innerHTML=`<span class="pill">GUIA TRIBUTÁRIO</span><h2>Regimes e anexos</h2><div class="panel"><p><b>MEI:</b> ocupação expressamente permitida no Anexo XI e faturamento de até R$ 81 mil/ano (proporcional no ano de abertura), além dos demais requisitos.</p><p><b>Simples Nacional:</b> os cinco anexos abrangem comércio (I), indústria (II) e diferentes serviços (III, IV e V). A alíquota depende da receita e, em algumas atividades, do fator R.</p><p><b>Fator R:</b> em atividades específicas, a relação folha/receita acumulada pode levar ao Anexo III quando atinge 28%, ou ao V abaixo disso.</p><p><b>Anexo IV:</b> a contribuição previdenciária patronal pode precisar ser recolhida separadamente; o motor atual não a calcula.</p><p>A CBO de uma profissão e o CNAE de uma atividade empresarial são classificações diferentes. O Anexo XI lista ocupações permitidas ao MEI, mas uma profissão genérica não garante MEI nem determina sozinha o anexo.  O enquadramento definitivo requer atividade real e confirmação contábil.</p><p><a href="https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Anexo_XI.pdf" target="_blank" rel="noopener">Lista oficial do MEI</a></p><p><b>Por que a Resolução CGSN 140?</b> É uma norma central de regulamentação do Simples Nacional e traz, no Anexo XI, a lista de ocupações permitidas ao MEI.</p><p><a href="https://normas.receita.fazenda.gov.br/sijut2consulta/normas.receisulta/link.action?idAto=92278&visao=compilado" target="_blank" rel="noopener">Resolução CGSN 140</a></p></div>`}
+// Mesma proposta, texto e tabela da impressão existente.
+document.addEventListener('click', event=>{
+  const button=event.target.closest('#downloadPdf');
+  if(!button)return;
+  event.preventDefault();
+  event.stopImmediatePropagation();
+  printCleanProposal();
+},true);
+
 render();
+
+// Restaura a área do usuário após atualizar a página.
+async function equivaleRestoreSessionV1(){
+  if(new URLSearchParams(location.search).has('token') ||
+     new URLSearchParams(location.search).has('login')) return;
+
+  try{
+    const response=await fetch('/api/auth/me',{
+      credentials:'same-origin',
+      cache:'no-store'
+    });
+    if(!response.ok)return;
+    const data=await response.json();
+    if(data.user && data.user.accessStatus==='active'){
+      go('dashboard');
+    }
+  }catch(error){
+    console.warn('Sessão não pôde ser restaurada.');
+  }
+}
+window.addEventListener('load',equivaleRestoreSessionV1);
+
+
+if (new URLSearchParams(window.location.search).has('login')) {
+  window.history.replaceState({}, '', '/');
+  setTimeout(() => document.querySelector('[data-go="login"]')?.click(), 0);
+}

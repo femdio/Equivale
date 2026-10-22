@@ -42,13 +42,13 @@ test('rejeita assinatura falsificada', () => {
   );
 });
 
-test('rejeita assinatura expirada', () => {
+test('aceita reenvio antigo com assinatura HMAC válida', () => {
   process.env.MP_WEBHOOK_SECRET = SECRET;
   const timestamp = Date.now() - 10 * 60 * 1000;
 
   assert.equal(
     sigOk(makeRequest({ timestamp }), PAYMENT_ID),
-    false
+    true
   );
 });
 

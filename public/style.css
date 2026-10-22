@@ -148,3 +148,104 @@
 .account-actions{display:flex;gap:10px;margin:22px 0}.account-history-title{font-size:21px;margin:26px 0 14px}
 .account-history{color:#6b7e84;font-size:14px}.history-row{border:1px solid #e1ebe6;border-radius:10px;padding:13px;display:flex;justify-content:space-between;gap:10px;margin:8px 0}
 @media(max-width:760px){.account-panel{padding:24px}.account-actions{flex-wrap:wrap}.account-actions button{flex:1}}
+
+
+/* Alinhamento do menu superior */
+header.top .nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header.top .nav > button {
+  box-sizing: border-box;
+  height: 48px;
+  min-height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+header.top .nav > button span {
+  line-height: 1.2;
+}
+
+/* Nome do usuário no cabeçalho */
+.equivale-user-name {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  color: #667982;
+  max-width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+/* Saudação nas páginas da calculadora */
+.equivale-welcome {
+  color: #126b5d;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+/* Equivale - nome do usuário abaixo de Minha conta */
+header.top .nav button[data-go="dashboard"] {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 3px !important;
+  min-width: 170px;
+  min-height: 52px;
+  height: auto !important;
+  overflow: visible !important;
+  white-space: normal !important;
+}
+
+header.top .nav button[data-go="dashboard"] .equivale-user-name {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  line-height: 15px !important;
+  color: #526c73 !important;
+  max-width: 165px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+header.top .nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Alinhamento final do menu superior */
+header.top .nav {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px;
+}
+
+header.top .nav > button {
+  height: 52px !important;
+  min-height: 52px !important;
+  box-sizing: border-box;
+  justify-content: center !important;
+}
+
+header.top .nav button[data-go="dashboard"] {
+  height: 52px !important;
+  min-height: 52px !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

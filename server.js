@@ -2,6 +2,7 @@ import http from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 import { calculate } from './src/calculate.js';
+import { generateReport } from './src/report.js';
 import { authRoute, requirePaidUser, saveSimulation, listSimulations } from './src/auth.js';
 import { paymentRoute } from './src/payments.js';
 import { validateRequestOrigin } from './src/security.js';
@@ -27,11 +28,44 @@ const server=http.createServer(async(req,res)=>{
     }
     if(path.startsWith('/api/payments/')) return await paymentRoute(req,res,path,url);
     if(path.startsWith('/api/auth/')) return await authRoute(req,res,path);
+    if(path==='/api/report' && req.method==='POST'){
+      const user=await requirePaidUser(req,res);
+      if(!user)return;
+      const input=await bodyJson(req);
+      if(!input || typeof input!=='object' || Array.isArray(input) ||
+         !Number.isFinite(Number(input.offer)) ||
+         Number(input.offer)<=0 || Number(input.offer)>400000)
+        return json(res,400,{error:'Faturamento invalido'});
+      const result=calculate(input);
+      const pdf=await generateReport(input,result,{
+        name:user.full_name
+      });
+      res.writeHead(200,{
+        'Content-Type':'application/pdf',
+        'Content-Disposition':'attachment; filename="equivale-relatorio.pdf"',
+        'Content-Length':pdf.length,
+        'Cache-Control':'no-store',
+        'X-Content-Type-Options':'nosniff'
+      });
+      res.end(pdf);
+      return;
+    }
+    if(path==='/api/simulations/save' && req.method==='POST'){
+      const user=await requirePaidUser(req,res);
+      if(!user)return;
+      const input=await bodyJson(req);
+      if(!input || typeof input!=='object' || Array.isArray(input) ||
+         !Number.isFinite(Number(input.offer)) ||
+         Number(input.offer)<=0 || Number(input.offer)>400000)
+        return json(res,400,{error:'Simulação inválida'});
+      const result=calculate(input);
+      await saveSimulation(user.id,input,result);
+      return json(res,201,{saved:true});
+    }
     if(path==='/api/calculate' && req.method==='POST'){
       const user=await requirePaidUser(req,res);if(!user)return;
       const input=await bodyJson(req);
       const result=calculate(input);
-      await saveSimulation(user.id,input,result);
       return json(res,200,result);
     }
     if(path==='/api/simulations' && req.method==='GET'){
