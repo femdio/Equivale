@@ -121,7 +121,7 @@ if (path === '/api/auth/login' && req.method === 'POST') {
     if(user) {
       const token=randomBytes(32).toString('hex');
       const hash=digest(token);
-      await db().query(`INSERT INTO password_reset_tokens(user_id,token_hash,expires_at) VALUES($1,$2,now()+interval '30 minutes')`,[user.id,hash]);
+      await db().query(`INSERT INTO password_reset_tokens(user_id,token_hash,expires_at) VALUES($1,$2,now()+($3::integer * interval '1 minute'))`,[user.id,hash,user.password_hash ? 30 : 1440]);
       try {
   await sendPasswordLink({
     to: user.email,

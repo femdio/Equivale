@@ -67,7 +67,7 @@ async function createCheckout(req,res) {
   const preference=await mp('/checkout/preferences',{method:'POST',headers:{'X-Idempotency-Key':randomUUID()},body:JSON.stringify({
     items:[{id:'equivale-vitalicio',title:'Equivale — Acesso vitalício',quantity:1,currency_id:'BRL',unit_price:29.90}],
     payer:{email},external_reference:String(order.id),
-    back_urls:{success:`${base}/?pagamento=sucesso`,pending:`${base}/?pagamento=pendente`,failure:`${base}/?pagamento=erro`},
+    back_urls:{success:`${base}/pagamento.html?status=sucesso`,pending:`${base}/pagamento.html?status=pendente`,failure:`${base}/pagamento.html?status=erro`},
     notification_url:`${base}/api/payments/webhook`,
     auto_return:'approved'
   })});
@@ -140,7 +140,7 @@ if (payment.status !== 'approved') {
     await client.query(`UPDATE users SET access_status='active',updated_at=now() WHERE id=$1`,[order.uid]);
     if(!order.password_hash){
       const raw=randomBytes(32).toString('hex');
-      await client.query(`INSERT INTO password_reset_tokens(user_id,token_hash,expires_at) VALUES($1,$2,now()+interval '30 minutes')`,[order.uid,createHash('sha256').update(raw).digest('hex')]);
+      await client.query(`INSERT INTO password_reset_tokens(user_id,token_hash,expires_at) VALUES($1,$2,now()+interval '24 hours')`,[order.uid,createHash('sha256').update(raw).digest('hex')]);
       activation={to:order.email,name:order.full_name,token:raw};
     }
     await client.query('COMMIT');

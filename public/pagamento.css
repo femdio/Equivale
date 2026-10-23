@@ -1,0 +1,31 @@
+body{margin:0;background:#f3f8f7;color:#17333e;font-family:Arial,Helvetica,sans-serif}
+header{background:#fff;padding:22px max(24px,5%);border-bottom:1px solid #dce9e5}
+.brand{font-size:28px;font-weight:800;letter-spacing:-1px;color:#106b5d;text-decoration:none}.brand span{color:#e3a24b}
+main{box-sizing:border-box;max-width:570px;margin:65px auto;padding:40px;background:#fff;border:1px solid #dce9e5;border-radius:18px;text-align:center;box-shadow:0 10px 35px #17333e0b}
+.icon{display:grid;place-items:center;background:#e2f5eb;color:#106b5d;border-radius:50%;width:64px;height:64px;font-size:32px;margin:0 auto 22px}
+h1{font-size:29px;margin:0 0 16px}
+p{line-height:1.7;color:#5a7179}
+.button{display:inline-block;margin-top:18px;padding:14px 24px;border-radius:10px;background:#106b5d;color:white;text-decoration:none;font-weight:bold}
+.note{background:#f3f8f7;padding:18px;border-radius:10px;margin-top:25px;font-size:14px;line-height:1.7;color:#526b74;text-align:left}
+@media(max-width:600px){main{margin:24px 14px;padding:26px}}
+
+/* Centralização e responsividade da página pós-pagamento */
+main {
+  box-sizing: border-box;
+  width: calc(100% - 32px);
+  max-width: 570px;
+  margin: 65px auto;
+  padding: 40px;
+  text-align: center;
+}
+
+main .note {
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 24px auto;
+    padding: 26px;
+  }
+}

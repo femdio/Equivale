@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Seu pagamento | Equivale</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/pagamento.css?v=1">
+</head>
+<body>
+<header><a class="brand" href="/">equivale<span>.</span></a></header>
+<main>
+  <div class="icon" aria-hidden="true">✉</div>
+  <h1 id="title">Confira seu e-mail</h1>
+  <p id="description">Se o pagamento for aprovado, você receberá um e-mail com as instruções para criar sua senha e acessar o Equivale.</p>
+  <div class="note" id="note">
+    <strong>Próximos passos</strong><br>
+    Verifique sua caixa de entrada, spam e promoções.<br>
+    O link de primeiro acesso vale por 24 horas.<br>
+    Se expirar, use Entrar → Esqueci minha senha para receber outro link, sem pagar novamente.
+  </div>
+  <a class="button" href="/">Ir para o Equivale</a>
+</main>
+<script>
+const status=new URLSearchParams(location.search).get('status');
+const title=document.getElementById('title');
+const description=document.getElementById('description');
+if(status==='pendente'){
+  title.textContent='Pagamento em análise';
+  description.textContent='Estamos aguardando a confirmação do pagamento. Assim que for aprovado, enviaremos as instruções de acesso por e-mail.';
+}else if(status==='erro'){
+  title.textContent='Pagamento não concluído';
+  description.textContent='Não recebemos uma confirmação de pagamento. Volte ao Equivale para tentar novamente ou verificar sua compra.';
+  document.getElementById('note').hidden=true;
+}else{
+  title.textContent='Confira seu e-mail';
+  description.textContent='Se o pagamento foi aprovado, seu e-mail de primeiro acesso será enviado após a confirmação do Mercado Pago. Isso pode levar alguns instantes.';
+}
+</script>
+</body>
+</html>

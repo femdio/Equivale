@@ -1,68 +1,58 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Definir senha | Equivale</title>
-  <link rel="stylesheet" href="/style.css">
-  <style>
-    .password-container {
-      max-width: 420px;
-      margin: 80px auto;
-      padding: 32px;
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 8px 30px #00000012;
-    }
-    .password-container label {
-      display: block;
-      margin-top: 18px;
-      font-weight: 600;
-    }
-    .password-container input {
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-      padding: 12px;
-      margin-top: 8px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    .password-container button {
-      width: 100%;
-      margin-top: 24px;
-      padding: 14px;
-      background: #116b5b;
-      color: white;
-      border: 0;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    #message { margin-top: 18px; }
-  </style>
-  <script src="/definir-senha.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Definir senha | Equivale</title>
+<link rel="stylesheet" href="/style.css">
+<style>
+  body {background:#f3f8f7;margin:0;color:#17333e;font-family:Arial,Helvetica,sans-serif}
+  .password-header{background:#fff;padding:22px max(24px,5%);border-bottom:1px solid #dce9e5}
+  .password-brand{font-size:28px;font-weight:800;color:#106b5d;text-decoration:none;letter-spacing:-1px}
+  .password-brand span{color:#e3a24b}
+  .password-container{box-sizing:border-box;max-width:470px;margin:62px auto;padding:36px;background:#fff;border:1px solid #dce9e5;border-radius:18px;box-shadow:0 10px 35px #17333e0b}
+  .password-container h1{font-size:29px;margin:0 0 12px;letter-spacing:-.6px}
+  .password-container .intro{color:#627982;line-height:1.6;margin-bottom:30px}
+  .password-container label{display:block;font-size:14px;font-weight:700;margin:20px 0 8px}
+  .password-field{position:relative}
+  .password-field input{box-sizing:border-box;width:100%;height:50px;padding:12px 52px 12px 14px;border:1px solid #cbded8;border-radius:10px;background:#fff;color:#17333e;font-size:15px}
+  .password-field input:focus{outline:2px solid #98d6c2;outline-offset:1px}
+  .eye-button{position:absolute;top:50%;right:7px;transform:translateY(-50%);border:0;background:transparent;cursor:pointer;color:#567079;width:38px;height:38px;display:grid;place-items:center}
+  .eye-button svg{width:21px;height:21px;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .eye-button:hover{color:#106b5d}
+  .password-submit{display:block;width:100%;margin-top:28px;background:#106b5d;color:#fff;border:0;border-radius:10px;padding:15px;font-size:15px;font-weight:700;cursor:pointer}
+  .password-submit:disabled{opacity:.6;cursor:not-allowed}
+  .password-info{font-size:13px;color:#627982;margin:12px 0}
+  #message{margin-top:20px;line-height:1.6}
+  .password-link{display:inline-block;margin-top:12px;color:#106b5d;font-weight:700;text-decoration:none}
+  .password-link:hover{text-decoration:underline}
+  @media(max-width:520px){.password-container{margin:20px 14px;padding:24px}}
+</style>
+<script src="/definir-senha.js" defer></script>
+<link rel="stylesheet" href="/definir-senha.css?v=2">
 </head>
 <body>
-  <main class="password-container">
-    <h1>equivale.</h1>
-    <h2>Definir sua senha</h2>
-    <p>Crie uma senha para acessar sua conta.</p>
-
-    <form id="password-form">
-      <label for="password">Nova senha</label>
-      <input id="password" type="password"
-             autocomplete="new-password"
-             minlength="8" maxlength="32" required>
-
-      <label for="confirm">Confirmar senha</label>
-      <input id="confirm" type="password"
-             autocomplete="new-password" minlength="8" maxlength="32" required>
-
-      <button type="submit">Salvar senha</button>
-    </form>
-
-    <p id="message" role="status" aria-live="polite"></p>
-  </main>
+<header class="password-header"><a class="password-brand" href="/">equivale<span>.</span></a></header>
+<main class="password-container">
+  <h1>Definir sua senha</h1>
+  <p class="intro">Crie ou redefina sua senha para acessar o Equivale.</p>
+  <form id="password-form">
+    <label for="password">Nova senha</label>
+    <div class="password-field">
+      <input id="password" type="password" autocomplete="new-password" minlength="8" maxlength="32" required>
+      <button class="eye-button" type="button" data-toggle="password" aria-label="Mostrar senha" title="Mostrar senha"></button>
+    </div>
+    <label for="confirm">Confirmar senha</label>
+    <div class="password-field">
+      <input id="confirm" type="password" autocomplete="new-password" minlength="8" maxlength="32" required>
+      <button class="eye-button" type="button" data-toggle="confirm" aria-label="Mostrar senha" title="Mostrar senha"></button>
+    </div>
+    <p class="password-info">Utilize uma senha entre 8 e 32 caracteres.</p>
+    <button class="password-submit" type="submit">Salvar senha</button>
+  </form>
+  <p id="message" role="status" aria-live="polite"></p>
+  <a class="password-link" id="recovery-link" href="/" hidden>Voltar ao Equivale para solicitar outro link →</a>
+</main>
 </body>
 </html>
