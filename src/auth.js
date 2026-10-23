@@ -14,7 +14,7 @@ function db() {
 }
 const digest = value => createHash('sha256').update(value).digest('hex');
 const cookieName = 'equivale_session';
-const secure = process.env.NODE_ENV === 'production';
+const secure = new URL(process.env.APP_BASE_URL).protocol === 'https:';
 const publicUser = u => ({id:u.id,name:u.full_name,email:u.email,accessStatus:u.access_status});
 const json = (res, code, data) => {res.writeHead(code, {'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'}); res.end(JSON.stringify(data));};
 const cookie = token => `${cookieName}=${encodeURIComponent(token)}; HttpOnly; Path=/; SameSite=Lax; Max-Age=604800${secure?'; Secure':''}`;

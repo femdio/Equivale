@@ -1,6 +1,7 @@
 import pg from 'pg';
 import { randomBytes, createHash, createHmac, timingSafeEqual, randomUUID } from 'node:crypto';
 import { sendPasswordLink } from './mail.js';
+import { loginRateLimit } from './rate-limit.js';
 
 const pool = new pg.Pool({connectionString: process.env.DATABASE_URL, max: 5, connectionTimeoutMillis: 5000});
 const API = 'https://api.mercadopago.com';
@@ -60,6 +61,12 @@ async function createCheckout(req,res) {
   const b=await body(req);
   const name=String(b.name||'').trim();const email=String(b.email||'').trim().toLowerCase();
   if(name.length<2||name.length>200||email.length>254||!/^\S+@\S+\.\S+$/.test(email))throw fail('Nome ou e-mail inválido');
+  const throttle=loginRateLimit(req,email,'checkout');
+  if(!throttle.allowed){
+    res.setHeader('Retry-After',String(throttle.retryAfter));
+    return json(res,429,{error:'Muitas tentativas de pagamento. Tente novamente mais tarde.'});
+  }
+
   const base=baseUrl();
   const {rows:[user]}=await pool.query(`INSERT INTO users(full_name,email) VALUES($1,$2) ON CONFLICT (lower(email)) DO UPDATE SET updated_at=now() RETURNING id,access_status`,[name,email]);
   if(user.access_status==='active')throw fail('Já existe acesso ativo para este e-mail. Utilize o login.',409);

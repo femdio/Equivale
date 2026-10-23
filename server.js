@@ -6,6 +6,7 @@ import { generateReport } from './src/report.js';
 import { authRoute, requirePaidUser, saveSimulation, listSimulations } from './src/auth.js';
 import { paymentRoute } from './src/payments.js';
 import { validateRequestOrigin } from './src/security.js';
+import { ipLimit, userLimit } from './src/traffic-limit.js';
 
 const base=resolve('public');
 const types={'.json':'application/json; charset=utf-8','.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml'};
@@ -26,6 +27,23 @@ const server=http.createServer(async(req,res)=>{
         error: 'Origem da requisição não autorizada'
       });
     }
+
+    if(req.method==='POST' && path==='/api/auth/register'){
+      const limit=ipLimit(req,'register',5,60*60*1000);
+      if(!limit.allowed){
+        res.setHeader('Retry-After',String(limit.retryAfter));
+        return json(res,429,{error:'Muitas solicitações. Tente novamente mais tarde.'});
+      }
+    }
+
+    if(req.method==='POST' && path==='/api/payments/checkout'){
+      const limit=ipLimit(req,'checkout-request',20,15*60*1000);
+      if(!limit.allowed){
+        res.setHeader('Retry-After',String(limit.retryAfter));
+        return json(res,429,{error:'Muitas tentativas de pagamento. Tente novamente mais tarde.'});
+      }
+    }
+
     if(path.startsWith('/api/payments/')) return await paymentRoute(req,res,path,url);
     if(path.startsWith('/api/auth/')) return await authRoute(req,res,path);
     if(path==='/api/report' && req.method==='POST'){
@@ -53,6 +71,12 @@ const server=http.createServer(async(req,res)=>{
     if(path==='/api/simulations/save' && req.method==='POST'){
       const user=await requirePaidUser(req,res);
       if(!user)return;
+      const throttle=userLimit(user.id,'simulation-save',20,3600000);
+      if(!throttle.allowed){
+        res.setHeader('Retry-After',String(throttle.retryAfter));
+        return json(res,429,{error:'Limite de utilização atingido. Tente novamente mais tarde.'});
+      }
+
       const input=await bodyJson(req);
       if(!input || typeof input!=='object' || Array.isArray(input) ||
          !Number.isFinite(Number(input.offer)) ||
@@ -64,6 +88,12 @@ const server=http.createServer(async(req,res)=>{
     }
     if(path==='/api/calculate' && req.method==='POST'){
       const user=await requirePaidUser(req,res);if(!user)return;
+      const throttle=userLimit(user.id,'calculate',60,60000);
+      if(!throttle.allowed){
+        res.setHeader('Retry-After',String(throttle.retryAfter));
+        return json(res,429,{error:'Limite de utilização atingido. Tente novamente mais tarde.'});
+      }
+
       const input=await bodyJson(req);
       const result=calculate(input);
       return json(res,200,result);
